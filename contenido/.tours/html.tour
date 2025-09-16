@@ -1,0 +1,137 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "CV HTML sin CSS – Tour actualizado",
+  "description": "Explicación de las etiquetas del CV tras los cambios en cv.html.",
+  "steps": [
+    {
+      "file": "cv.html",
+      "line": 1,
+      "description": "`<!DOCTYPE html>` declara HTML5 y fuerza el modo estándar del navegador."
+    },
+    {
+      "file": "cv.html",
+      "line": 3,
+      "description": "`<html lang=\"es\">` es el elemento raíz. `lang=\"es\"` indica el idioma del documento (accesibilidad y SEO)."
+    },
+    {
+      "file": "cv.html",
+      "line": 5,
+      "description": "`<head>` contiene metadatos (no visibles): codificación, título, enlaces a recursos, etc."
+    },
+    {
+      "file": "cv.html",
+      "line": 7,
+      "description": "`<meta charset=\"utf-8\">` define la codificación de caracteres (acentos y símbolos en español)."
+    },
+    {
+      "file": "cv.html",
+      "line": 9,
+      "description": "`<title>` establece el título de la pestaña/ventana y de los marcadores."
+    },
+    {
+      "file": "cv.html",
+      "line": 13,
+      "description": "`<body>` contiene todo el contenido visible de la página."
+    },
+    {
+      "file": "cv.html",
+      "line": 15,
+      "description": "`<header>` es la cabecera del documento (título principal, datos destacables)."
+    },
+    {
+      "file": "cv.html",
+      "line": 17,
+      "description": "`<h1>` encabezado principal: debe describir el tema global del documento (tu nombre en el CV)."
+    },
+    {
+      "file": "cv.html",
+      "line": 19,
+      "description": "`<p>` define un párrafo. Úsalo para bloques de texto coherente."
+    },
+    {
+      "file": "cv.html",
+      "line": 21,
+      "description": "`<strong>` aplica énfasis semántico fuerte (importancia). Suele verse en negrita."
+    },
+    {
+      "file": "cv.html",
+      "line": 47,
+      "description": "`<em>` aplica énfasis semántico (matiz en la entonación). Suele verse en cursiva."
+    },
+    {
+      "file": "cv.html",
+      "line": 1,
+      "description": "`<img src=... alt=... width height>` inserta una imagen. `alt` describe la imagen (accesibilidad). `width/height` reservan espacio."
+    },
+    {
+      "file": "cv.html",
+      "line": 30,
+      "description": "`<a href=\"mailto:...\">` crea un enlace que abre el cliente de correo."
+    },
+    {
+      "file": "cv.html",
+      "line": 32,
+      "description": "`<a href=\"tel:...\">` intenta iniciar una llamada en dispositivos compatibles."
+    },
+    {
+      "file": "cv.html",
+      "line": 34,
+      "description": "`<a href=\"https://...\">` es un enlace web estándar (p. ej., a LinkedIn)."
+    },
+    {
+      "file": "cv.html",
+      "line": 39,
+      "description": "`<main>` delimita el contenido principal único del documento (uno por página)."
+    },
+    {
+      "file": "cv.html",
+      "line": 41,
+      "description": "`<section>` agrupa contenido temático. Aquí: sección *Perfil*."
+    },
+    {
+      "file": "cv.html",
+      "line": 43,
+      "description": "`<h2>` encabezado de segundo nivel dentro de una sección bajo `<h1>`."
+    },
+    {
+      "file": "cv.html",
+      "line": 52,
+      "description": "Sección *Educación*: título para tu formación académica."
+    },
+    {
+      "file": "cv.html",
+      "line": 54,
+      "description": "`<ol>` crea una **lista ordenada** (numerada). Útil para cronologías."
+    },
+    {
+      "file": "cv.html",
+      "line": 56,
+      "description": "`<li>` es cada elemento de una lista (`<ol>`/`<ul>`)."
+    },
+    {
+      "file": "cv.html",
+      "line": 63,
+      "description": "Sección *Experiencia*: describe puestos/prácticas; puedes mantener orden cronológico."
+    },
+    {
+      "file": "cv.html",
+      "line": 71,
+      "description": "Sección *Habilidades*: tus competencias clave."
+    },
+    {
+      "file": "cv.html",
+      "line": 73,
+      "description": "`<ul>` crea una **lista sin orden** (viñetas)."
+    },
+    {
+      "file": "cv.html",
+      "line": 82,
+      "description": "Sección *Proyectos*: enumera trabajos relevantes y tu rol."
+    },
+    {
+      "file": "cv.html",
+      "line": 91,
+      "description": "`<footer>` pie del documento: créditos o fecha de actualización."
+    }
+  ]
+}
