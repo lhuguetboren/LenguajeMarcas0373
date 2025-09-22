@@ -1,6 +1,5 @@
 site_name: LMSGI ASIX — Lenguajes de Marcas
 site_description: Documentación en Markdown para 1º de ASIX (HTML, XML/DTD/XSD, XPath/XSLT, RSS, SVG, JSON)
-site_url: http://localhost:8000/
 theme:
   name: material
   language: es
