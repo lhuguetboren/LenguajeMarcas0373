@@ -8,7 +8,7 @@ Descarga el CV y personaliza el CV con tus datos.
 - Pon tu correo
 - Tags semántico
 
-2. Sube los archivos
+2. Sube el archivo CV_basico.html
 
 ## 2 Maqueta el CV con el tag table
 
@@ -18,7 +18,7 @@ Descarga el CV y personaliza el CV con tus datos.
 - Pon tu correo
 - Tags semánticos
 
-2. Sube los archivos con el nombre CV_table.html
+2. Sube el archivo con el nombre CV_table.html
 
 ## 3 Maqueta el CV con div
 
@@ -28,7 +28,7 @@ Descarga el CV y personaliza el CV con tus datos.
 - Pon tu correo
 - Tags semánticos
 
-2. Sube los archivos con el html con el nombre de CV_div.html
+2. Sube el archivo con el nombre de CV_div.html
 
 ## Práctica final
 
@@ -36,4 +36,4 @@ Descarga el CV y personaliza el CV con tus datos.
 
 ![PrimeraPractica](img/primerapractica.png)
 
-2. Sube los archivos con el nombre de practicafinal.html
+2. Sube los archivos con el nombre de practicafinal.html (incluye las imagenes)
