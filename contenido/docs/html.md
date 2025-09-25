@@ -113,28 +113,8 @@ Comprender cómo a lo largo de la historia se ha organizado el espacio en **áre
     - Las **etiquetas no semánticas** solo sirven como contenedores o para aplicar estilos.  
     - Las **etiquetas semánticas** ayudan a comprender la función del contenido, favorecen la accesibilidad y mejoran el SEO.
 
-
 !!! tip "Referencias clave"
     - [MSDN](https://developer.mozilla.org/es/docs/Web/HTML/Reference) Referencia completa y ejemplos.
     - [w3schools html](https://www.w3schools.com/Html/html_elements.asp)  Referencia completa y entornos de prueba.
     - [w3schools semántico](https://www.w3schools.com/Html/html5_semantic_elements.asp)   Referencia.
 
-## Primera práctica
-
-### No se nada de html
-
-Comienza a construir esta página a partir de:
-
-![PrimeraPractica](img/primerapractica.png)
-
-[Manual par crear contenido](https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content)
-
-### Conozco html
-
-Demuestralo superando los siguientes grupos de ejercicios y realizando una captura de la nota final de cada uno de ellos y enviándomela. Necesitarás registrarte con tu correo.
-
-[Etiquetas](https://www.w3schools.com/html/exercise.asp?x=xrcise_elements1)
-[Encabezados](https://www.w3schools.com/html/exercise.asp?x=xrcise_headings1)
-[Enlaces](https://www.w3schools.com/html/exercise.asp?x=xrcise_links1)
-[Tablas](https://www.w3schools.com/html/exercise.asp?x=xrcise_tables1)
-[Listas](https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_ordered1)
