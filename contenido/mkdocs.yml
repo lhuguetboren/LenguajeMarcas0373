@@ -29,9 +29,12 @@ theme:
 # repo_url: https://github.com/tu-usuario/tu-repo
 # edit_uri: edit/main/docs/
 
-nav:
-  - Inicio: index.md
-  - HTML: html.md
+nav: 
+  - Introducción: html.md
+  - Tags y atributos: html_atributos.md
+  - Prácticas: practicas_html.md
+  - Referebcuas: html_referencias.md
+
 # - HTML & CSS: html_css.md
 #  - XML + DTD + XSD: xml_dtd_xsd.md
 #  - XPath & XSLT: xpath_xslt.md
