@@ -44,6 +44,8 @@
       
     
     
+      <link rel="stylesheet" href="../css/base.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -249,26 +251,7 @@
   
     
   
-  Prácticas
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../html_referencias/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Referencias
+  HTML-Práctica
 
       </a>
     </li>
@@ -288,6 +271,63 @@
     
   
   Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css_practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias
 
       </a>
     </li>
@@ -385,29 +425,7 @@
   
   
   <span class="md-ellipsis">
-    Prácticas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../html_referencias/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Referencias
+    HTML-Práctica
     
   </span>
   
@@ -439,6 +457,72 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -457,14 +541,9 @@
 
 <h1 id="xml-dtd-xsd">XML + DTD + XSD<a class="headerlink" href="#xml-dtd-xsd" title="Permanent link">&para;</a></h1>
 <p><strong>Bien formado</strong> vs <strong>válido</strong>, y definición de <strong>esquema (XSD)</strong>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>```xml
-<?xml version="1.0" encoding="UTF-8"?></p>
-</div>
-</div>
-</div>
+<p>=== "XML"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?></p>
 <!DOCTYPE catalogo SYSTEM "catalogo.dtd">
 <p><catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="catalogo.xsd">
@@ -485,17 +564,12 @@
     </modulos>
   </curso>
 </catalogo></p>
-<div class="highlight"><pre><span></span><code>```
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">DTD</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>```dtd
-&lt;!ELEMENT catalogo (curso+)&gt;</p>
-</div>
-</div>
-</div>
-<p>&lt;!ELEMENT curso (nombre, modulos)&gt;
+<pre><code>```
+</code></pre>
+<p>=== "DTD"
+    ```dtd
+    &lt;!ELEMENT catalogo (curso+)&gt;
+&lt;!ELEMENT curso (nombre, modulos)&gt;
 &lt;!ATTLIST curso id ID #REQUIRED&gt;</p>
 <p>&lt;!ELEMENT nombre (#PCDATA)&gt;
 &lt;!ELEMENT modulos (modulo+)&gt;
@@ -503,17 +577,12 @@
 &lt;!ATTLIST modulo
   codigo CDATA #REQUIRED
   horas CDATA #IMPLIED&gt;</p>
-<div class="highlight"><pre><span></span><code>```
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">XSD</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>```xsd
-<?xml version="1.0" encoding="UTF-8"?></p>
-</div>
-</div>
-</div>
-<p><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<pre><code>```
+</code></pre>
+<p>=== "XSD"
+    ```xsd
+    <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
   <xs:element name="catalogo">
     <xs:complexType>
       <xs:sequence>
@@ -541,8 +610,8 @@
     </xs:complexType>
   </xs:element>
 </xs:schema></p>
-<div class="highlight"><pre><span></span><code>```
-</code></pre></div>
+<pre><code>```
+</code></pre>
 <div class="admonition exercise">
 <p class="admonition-title">Actividad</p>
 <p>Introduce un nuevo <code>curso</code> y un <code>modulo</code> con atributos <code>codigo</code> y <code>horas</code>. Valida con DTD y XSD.</p>

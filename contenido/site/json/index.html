@@ -44,6 +44,8 @@
       
     
     
+      <link rel="stylesheet" href="../css/base.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -249,26 +251,7 @@
   
     
   
-  Prácticas
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../html_referencias/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Referencias
+  HTML-Práctica
 
       </a>
     </li>
@@ -288,6 +271,63 @@
     
   
   Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css_practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias
 
       </a>
     </li>
@@ -385,29 +425,7 @@
   
   
   <span class="md-ellipsis">
-    Prácticas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../html_referencias/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Referencias
+    HTML-Práctica
     
   </span>
   
@@ -439,6 +457,72 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -457,55 +541,55 @@
 
 <h1 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h1>
 <p>Formato de datos ligero como contraste de <strong>XML</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;catalogo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;cursos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ASIX1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ASIX 1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;modulos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">          </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LMSGI&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;horas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">132</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lenguajes de marcas y sistemas de gestión de información&quot;</span>
-<span class="w">          </span><span class="p">},</span>
-<span class="w">          </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;horas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">132</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Implantación de sistemas operativos&quot;</span>
-<span class="w">          </span><span class="p">},</span>
-<span class="w">          </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BD&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;horas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">165</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bases de datos&quot;</span>
-<span class="w">          </span><span class="p">}</span>
-<span class="w">        </span><span class="p">]</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ASIX2&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ASIX 2&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;modulos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">          </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SR&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;horas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">132</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Servicios de red e Internet&quot;</span>
-<span class="w">          </span><span class="p">},</span>
-<span class="w">          </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ASO&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;horas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">99</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Administración de sistemas operativos&quot;</span>
-<span class="w">          </span><span class="p">},</span>
-<span class="w">          </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SAD&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;horas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">132</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Seguridad y alta disponibilidad&quot;</span>
-<span class="w">          </span><span class="p">}</span>
-<span class="w">        </span><span class="p">]</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">]</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+<pre><code class="language-json">{
+  &quot;catalogo&quot;: {
+    &quot;cursos&quot;: [
+      {
+        &quot;id&quot;: &quot;ASIX1&quot;,
+        &quot;nombre&quot;: &quot;ASIX 1&quot;,
+        &quot;modulos&quot;: [
+          {
+            &quot;codigo&quot;: &quot;LMSGI&quot;,
+            &quot;horas&quot;: 132,
+            &quot;nombre&quot;: &quot;Lenguajes de marcas y sistemas de gestión de información&quot;
+          },
+          {
+            &quot;codigo&quot;: &quot;ISO&quot;,
+            &quot;horas&quot;: 132,
+            &quot;nombre&quot;: &quot;Implantación de sistemas operativos&quot;
+          },
+          {
+            &quot;codigo&quot;: &quot;BD&quot;,
+            &quot;horas&quot;: 165,
+            &quot;nombre&quot;: &quot;Bases de datos&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;ASIX2&quot;,
+        &quot;nombre&quot;: &quot;ASIX 2&quot;,
+        &quot;modulos&quot;: [
+          {
+            &quot;codigo&quot;: &quot;SR&quot;,
+            &quot;horas&quot;: 132,
+            &quot;nombre&quot;: &quot;Servicios de red e Internet&quot;
+          },
+          {
+            &quot;codigo&quot;: &quot;ASO&quot;,
+            &quot;horas&quot;: 99,
+            &quot;nombre&quot;: &quot;Administración de sistemas operativos&quot;
+          },
+          {
+            &quot;codigo&quot;: &quot;SAD&quot;,
+            &quot;horas&quot;: 132,
+            &quot;nombre&quot;: &quot;Seguridad y alta disponibilidad&quot;
+          }
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona</p>
 <p>¿Qué ventajas e inconvenientes ves frente a XML para tus casos?</p>

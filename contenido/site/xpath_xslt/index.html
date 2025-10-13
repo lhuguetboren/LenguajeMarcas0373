@@ -44,6 +44,8 @@
       
     
     
+      <link rel="stylesheet" href="../css/base.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -249,26 +251,7 @@
   
     
   
-  Prácticas
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../html_referencias/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Referencias
+  HTML-Práctica
 
       </a>
     </li>
@@ -288,6 +271,63 @@
     
   
   Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css_practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias
 
       </a>
     </li>
@@ -385,29 +425,7 @@
   
   
   <span class="md-ellipsis">
-    Prácticas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../html_referencias/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Referencias
+    HTML-Práctica
     
   </span>
   
@@ -439,6 +457,72 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -458,14 +542,14 @@
 <h1 id="xpath-xslt">XPath &amp; XSLT<a class="headerlink" href="#xpath-xslt" title="Permanent link">&para;</a></h1>
 <p><strong>XPath</strong> selecciona nodos en XML; <strong>XSLT</strong> los transforma (p. ej., a HTML).</p>
 <h2 id="xpath-ejemplos">XPath (ejemplos)<a class="headerlink" href="#xpath-ejemplos" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>/catalogo/curso
-/catalogo/curso[@id=&#39;ASIX1&#39;]
+<pre><code class="language-xpath">/catalogo/curso
+/catalogo/curso[@id='ASIX1']
 //modulo[@horas&gt;130]
-/catalogo/curso[nombre=&#39;ASIX 2&#39;]
-//modulo[contains(., &#39;Sistemas&#39;)]
-</code></pre></div>
+/catalogo/curso[nombre='ASIX 2']
+//modulo[contains(., 'Sistemas')]
+</code></pre>
 <h2 id="xslt-de-ejemplo">XSLT de ejemplo<a class="headerlink" href="#xslt-de-ejemplo" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<pre><code class="language-xsl">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
   &lt;xsl:output method=&quot;html&quot; version=&quot;5&quot; encoding=&quot;UTF-8&quot; indent=&quot;yes&quot;/&gt;
   &lt;xsl:template match=&quot;/&quot;&gt;
@@ -502,7 +586,8 @@
     &lt;/html&gt;
   &lt;/xsl:template&gt;
 &lt;/xsl:stylesheet&gt;
-</code></pre></div>
+
+</code></pre>
 <div class="admonition exercise">
 <p class="admonition-title">Actividad</p>
 <p>Ordena los módulos por <code>@horas</code> (mayor a menor) y añade una fila de totales.</p>

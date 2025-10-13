@@ -48,6 +48,8 @@
       
     
     
+      <link rel="stylesheet" href="../css/base.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -255,26 +257,7 @@
   
     
   
-  Prácticas
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../html_referencias/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Referencias
+  HTML-Práctica
 
       </a>
     </li>
@@ -294,6 +277,63 @@
     
   
   Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css_practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias
 
       </a>
     </li>
@@ -691,29 +731,7 @@
   
   
   <span class="md-ellipsis">
-    Prácticas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../html_referencias/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Referencias
+    HTML-Práctica
     
   </span>
   
@@ -745,6 +763,72 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -765,22 +849,20 @@
 <p>Los atributos añaden información extra a las etiquetas y se colocan en el <strong>tag de apertura</strong>.</p>
 <h3 id="ejemplos">Ejemplos:<a class="headerlink" href="#ejemplos" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p><strong><code>href</code> en <code>&lt;a&gt;</code> (enlaces):</strong>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.wikipedia.org&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Ir a Wikipedia<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p><strong><code>src</code> en <code>&lt;img&gt;</code> (imágenes):</strong>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;paisaje.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Foto de un paisaje&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;300&quot;</span> <span class="p">/&gt;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p><strong><code>rel</code> en <code>&lt;link&gt;</code> (archivos externos como CSS):</strong>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;estilos.css&quot;</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</li>
+<li><strong><code>href</code> en <code>&lt;a&gt;</code> (enlaces):</strong></li>
 </ul>
+<pre><code class="language-html">&lt;a href=&quot;https://www.wikipedia.org&quot; target=&quot;_blank&quot;&gt;Ir a Wikipedia&lt;/a&gt;
+</code></pre>
+<ul>
+<li><strong><code>src</code> en <code>&lt;img&gt;</code> (imágenes):</strong></li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;paisaje.jpg&quot; alt=&quot;Foto de un paisaje&quot; width=&quot;300&quot; /&gt;
+</code></pre>
+<ul>
+<li><strong><code>rel</code> en <code>&lt;link&gt;</code> (archivos externos como CSS):</strong></li>
+</ul>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;estilos.css&quot;&gt;
+</code></pre>
 <h2 id="atributos-clave-id-class-y-style">Atributos clave: id, class y style<a class="headerlink" href="#atributos-clave-id-class-y-style" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong><code>id</code></strong>: identificador único.  </li>
@@ -788,10 +870,10 @@
 <li><strong><code>style</code></strong>: aplicar estilos en línea.</li>
 </ul>
 <p>Ejemplo:</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;parrafo1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;destacado&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: blue; font-size: 18px;&quot;</span><span class="p">&gt;</span>
+<pre><code class="language-html">&lt;p id=&quot;parrafo1&quot; class=&quot;destacado&quot; style=&quot;color: blue; font-size: 18px;&quot;&gt;
   Este es un párrafo con id, class y estilo en línea.
-<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
+&lt;/p&gt;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -909,181 +991,181 @@
 <hr />
 <h2 id="1-doctype-html">1. <code>&lt;!DOCTYPE html&gt;</code><a class="headerlink" href="#1-doctype-html" title="Permanent link">&para;</a></h2>
 <p>Declara el tipo de documento y la versión de HTML (HTML5 en este caso). Siempre debe ir al inicio del archivo.</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+</code></pre>
 <hr />
 <h2 id="2-html">2. <code>&lt;html&gt;</code><a class="headerlink" href="#2-html" title="Permanent link">&para;</a></h2>
 <p>Etiqueta raíz que envuelve todo el contenido de la página.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;html lang=&quot;es&quot;&gt; ... &lt;/html&gt;
+</code></pre>
 <hr />
 <h2 id="3-head">3. <code>&lt;head&gt;</code><a class="headerlink" href="#3-head" title="Permanent link">&para;</a></h2>
 <p>Contiene información de configuración y metadatos (no se muestra en la página).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ejemplo head<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Ejemplo head&lt;/title&gt;
+&lt;/head&gt;
+</code></pre>
 <hr />
 <h2 id="4-title">4. <code>&lt;title&gt;</code><a class="headerlink" href="#4-title" title="Permanent link">&para;</a></h2>
 <p>Define el título que aparece en la pestaña del navegador.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Mi página<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;title&gt;Mi página&lt;/title&gt;
+</code></pre>
 <hr />
 <h2 id="5-meta">5. <code>&lt;meta&gt;</code><a class="headerlink" href="#5-meta" title="Permanent link">&para;</a></h2>
 <p>Proporciona metadatos como la codificación de caracteres o la descripción.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;meta charset=&quot;UTF-8&quot;&gt;
+</code></pre>
 <hr />
 <h2 id="6-body">6. <code>&lt;body&gt;</code><a class="headerlink" href="#6-body" title="Permanent link">&para;</a></h2>
 <p>Contiene todo el contenido visible de la página.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>Contenido visible<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;body&gt;Contenido visible&lt;/body&gt;
+</code></pre>
 <hr />
 <h2 id="7-h1-h6">7. <code>&lt;h1&gt; ... &lt;h6&gt;</code><a class="headerlink" href="#7-h1-h6" title="Permanent link">&para;</a></h2>
 <p>Encabezados jerárquicos, desde el más importante (<code>h1</code>) hasta el menos (<code>h6</code>).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título principal<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Subtítulo<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+</code></pre>
 <hr />
 <h2 id="8-p">8. <code>&lt;p&gt;</code><a class="headerlink" href="#8-p" title="Permanent link">&para;</a></h2>
 <p>Define un párrafo de texto.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es un párrafo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;p&gt;Este es un párrafo&lt;/p&gt;
+</code></pre>
 <hr />
 <h2 id="9-a">9. <code>&lt;a&gt;</code><a class="headerlink" href="#9-a" title="Permanent link">&para;</a></h2>
 <p>Crea un enlace a otra página o recurso.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.google.com&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Ir a Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;a href=&quot;https://www.google.com&quot; target=&quot;_blank&quot;&gt;Ir a Google&lt;/a&gt;
+</code></pre>
 <hr />
 <h2 id="10-img">10. <code>&lt;img&gt;</code><a class="headerlink" href="#10-img" title="Permanent link">&para;</a></h2>
 <p>Inserta una imagen en la página.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;foto.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Descripción&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;200&quot;</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;img src=&quot;foto.jpg&quot; alt=&quot;Descripción&quot; width=&quot;200&quot;&gt;
+</code></pre>
 <hr />
 <h2 id="11-ul-y-li">11. <code>&lt;ul&gt;</code> y <code>&lt;li&gt;</code><a class="headerlink" href="#11-ul-y-li" title="Permanent link">&para;</a></h2>
 <p>Crea una lista desordenada (con viñetas).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Elemento 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Elemento 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
 <hr />
 <h2 id="12-ol-y-li">12. <code>&lt;ol&gt;</code> y <code>&lt;li&gt;</code><a class="headerlink" href="#12-ol-y-li" title="Permanent link">&para;</a></h2>
 <p>Crea una lista ordenada (numerada).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Paso 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Paso 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;ol&gt;
+  &lt;li&gt;Paso 1&lt;/li&gt;
+  &lt;li&gt;Paso 2&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
 <hr />
 <h2 id="13-div">13. <code>&lt;div&gt;</code><a class="headerlink" href="#13-div" title="Permanent link">&para;</a></h2>
 <p>Contenedor genérico en bloque, útil para maquetar.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background: lightblue; padding: 10px;&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido dentro de un div<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;div style=&quot;background: lightblue; padding: 10px;&quot;&gt;
+  &lt;p&gt;Contenido dentro de un div&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <hr />
 <h2 id="14-span">14. <code>&lt;span&gt;</code><a class="headerlink" href="#14-span" title="Permanent link">&para;</a></h2>
 <p>Contenedor en línea para aplicar estilos a parte del texto.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto con <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:red;&quot;</span><span class="p">&gt;</span>span destacado<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;p&gt;Texto con &lt;span style=&quot;color:red;&quot;&gt;span destacado&lt;/span&gt;&lt;/p&gt;
+</code></pre>
 <hr />
 <h2 id="15-br">15. <code>&lt;br&gt;</code><a class="headerlink" href="#15-br" title="Permanent link">&para;</a></h2>
 <p>Inserta un salto de línea.</p>
-<div class="highlight"><pre><span></span><code>Línea 1<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>Línea 2
-</code></pre></div>
+<pre><code class="language-html">Línea 1&lt;br&gt;Línea 2
+</code></pre>
 <hr />
 <h2 id="16-hr">16. <code>&lt;hr&gt;</code><a class="headerlink" href="#16-hr" title="Permanent link">&para;</a></h2>
 <p>Inserta una línea horizontal divisoria.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto arriba<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto abajo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;p&gt;Texto arriba&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Texto abajo&lt;/p&gt;
+</code></pre>
 <hr />
 <h2 id="17-strong">17. <code>&lt;strong&gt;</code><a class="headerlink" href="#17-strong" title="Permanent link">&para;</a></h2>
 <p>Indica texto con importancia (normalmente en negrita).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>importante<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;p&gt;Texto &lt;strong&gt;importante&lt;/strong&gt;&lt;/p&gt;
+</code></pre>
 <hr />
 <h2 id="18-em">18. <code>&lt;em&gt;</code><a class="headerlink" href="#18-em" title="Permanent link">&para;</a></h2>
 <p>Resalta texto con énfasis (normalmente en cursiva).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto con <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>énfasis<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;p&gt;Texto con &lt;em&gt;énfasis&lt;/em&gt;&lt;/p&gt;
+</code></pre>
 <hr />
 <h2 id="19-table-tr-td-th">19. <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code><a class="headerlink" href="#19-table-tr-td-th" title="Permanent link">&para;</a></h2>
 <p>Permite crear tablas con filas, columnas y cabeceras.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span> <span class="na">border</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Nombre<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Edad<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Ana<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">td</span><span class="p">&gt;</span>22<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;table border=&quot;1&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
 <h2 id="uso-del-div-para-maquetacion">Uso del <code>&lt;div&gt;</code> para maquetación<a class="headerlink" href="#uso-del-div-para-maquetacion" title="Permanent link">&para;</a></h2>
 <p>El <code>&lt;div&gt;</code> es una etiqueta de HTML que sirve como contenedor genérico en bloque.
 No añade ningún estilo ni significado por sí mismo, pero se utiliza para agrupar otros elementos y organizarlos en la página, normalmente aplicando estilos con CSS o funciones con JavaScript.</p>
 <p>Piensa en él como una caja vacía donde puedes meter texto, imágenes u otras etiquetas para darles formato o estructura.</p>
 <h3 id="ejemplo-basico">Ejemplo básico<a class="headerlink" href="#ejemplo-basico" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esto es un bloque dentro de un div.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;p&gt;Esto es un bloque dentro de un div.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <h3 id="agrupar-secciones">Agrupar secciones<a class="headerlink" href="#agrupar-secciones" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Sección de Noticias<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Noticia 1...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Noticia 2...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;h2&gt;Sección de Noticias&lt;/h2&gt;
+  &lt;p&gt;Noticia 1...&lt;/p&gt;
+  &lt;p&gt;Noticia 2...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <h3 id="divs-con-id-y-class">Divs con ID y Class<a class="headerlink" href="#divs-con-id-y-class" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;cabecera&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi Página<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<pre><code class="language-html">&lt;div id=&quot;cabecera&quot;&gt;
+  &lt;h1&gt;Mi Página&lt;/h1&gt;
+&lt;/div&gt;
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contenido&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Sección de contenido<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+&lt;div class=&quot;contenido&quot;&gt;
+  &lt;p&gt;Sección de contenido&lt;/p&gt;
+&lt;/div&gt;
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;pie&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 2025 - Pie de página<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
+&lt;div id=&quot;pie&quot;&gt;
+  &lt;p&gt;&amp;copy; 2025 - Pie de página&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <h3 id="maquetar-una-pagina-completa-con-divs">Maquetar una página completa con Divs<a class="headerlink" href="#maquetar-una-pagina-completa-con-divs" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-<span class="w">  </span><span class="p">#</span><span class="nn">header</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#ffcccb</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">#</span><span class="nn">nav</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#add8e6</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">#</span><span class="nn">main</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">#</span><span class="nn">content</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#d3ffd3</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">#</span><span class="nn">sidebar</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#f0e68c</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">#</span><span class="nn">footer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#ffcccb</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<pre><code class="language-html">&lt;style&gt;
+  #header { background: #ffcccb; padding: 20px; text-align: center; }
+  #nav { background: #add8e6; padding: 15px; }
+  #main { display: flex; margin: 10px; }
+  #content { flex: 3; background: #d3ffd3; padding: 20px; }
+  #sidebar { flex: 1; background: #f0e68c; padding: 20px; }
+  #footer { background: #ffcccb; padding: 15px; text-align: center; }
+&lt;/style&gt;
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;header&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi sitio web con DIVs<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+&lt;div id=&quot;header&quot;&gt;
+  &lt;h1&gt;Mi sitio web con DIVs&lt;/h1&gt;
+&lt;/div&gt;
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nav&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Noticias<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Contacto<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+&lt;div id=&quot;nav&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;Inicio&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Noticias&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Contacto&lt;/a&gt;
+&lt;/div&gt;
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;main&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;content&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Contenido principal<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto del artículo o información principal.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;sidebar&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Barra lateral<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Enlaces o publicidad.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+&lt;div id=&quot;main&quot;&gt;
+  &lt;div id=&quot;content&quot;&gt;
+    &lt;h2&gt;Contenido principal&lt;/h2&gt;
+    &lt;p&gt;Texto del artículo o información principal.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;sidebar&quot;&gt;
+    &lt;h3&gt;Barra lateral&lt;/h3&gt;
+    &lt;p&gt;Enlaces o publicidad.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;footer&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 2025 - Mi web de ejemplo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
+&lt;div id=&quot;footer&quot;&gt;
+  &lt;p&gt;&amp;copy; 2025 - Mi web de ejemplo&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 <hr />
 <h2 id="recursos-y-referencias">Recursos y referencias<a class="headerlink" href="#recursos-y-referencias" title="Permanent link">&para;</a></h2>
 <ul>

@@ -1,4 +1,4 @@
-# Referencias
+# Referencias HTML
 
 **Enlaces**
 
@@ -19,3 +19,20 @@
 [1]: https://www.youtube.com/watch?v=MJkdaVFHrto&utm_source=chatgpt.com "Aprende HTML ahora! curso completo GRATIS desde cero"
 [2]: https://www.youtube.com/watch?v=CGV9CuIUtwk&utm_source=chatgpt.com "El Mejor CURSO GRATIS de HTML desde Cero [Completo y ..."
 [3]: https://www.youtube.com/watch?v=XqFR2lqBYPs&utm_source=chatgpt.com "Aprende HTML y CSS - Curso Desde Cero"
+
+
+# Referencias CSS
+
+**Enlaces**
+
+[MDN – CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) Referencia oficial y completa de propiedades CSS.  
+[CSS-Tricks](https://css-tricks.com/) Sitio con tutoriales, guías y ejemplos reales de CSS.  
+[CSS Reference (cssreference.io)](https://cssreference.io/) Guía visual gratuita de CSS con ejemplos animados.
+
+**Videos**
+
+| Enlace                                                                 | Descripción                                                                                                                | Título                                               |
+|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| [youtube.com/watch?v=1Rs2ND1ryYc](https://www.youtube.com/watch?v=1Rs2ND1ryYc) | Curso completo para principiantes que cubre desde lo básico hasta conceptos avanzados de CSS.                             | CSS Tutorial – Zero to Hero (Complete Course)        |
+| [youtube.com/watch?v=n4R2E7O-Ngo](https://www.youtube.com/watch?v=n4R2E7O-Ngo) | Curso de CSS todo en uno que incluye Flexbox y Grid, ideal para dominar CSS3.                                            | CSS Full Course for Beginners \| Complete All-in-One Tutorial |
+| [youtube.com/watch?v=-G-zic_LS0A](https://www.youtube.com/watch?v=-G-zic_LS0A) | Curso introductorio de CSS para principiantes, explicando desde lo más básico hasta temas intermedios.                   | CSS Full Course Tutorial for Beginners                |

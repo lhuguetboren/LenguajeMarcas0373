@@ -32,20 +32,29 @@ theme:
 nav: 
   - Introducción: html.md
   - Tags y atributos: html_atributos.md
-  - Prácticas: practicas_html.md
-  - Referencias: html_referencias.md
+  - HTML-Práctica: practicas_html.md
   - Flex: html_flex.md
+  - CSS: css.md
+  - CSS-Práctica: css_practica.md
+  - Referencias: html_referencias.md
 
-# - HTML & CSS: html_css.md
 #  - XML + DTD + XSD: xml_dtd_xsd.md
 #  - XPath & XSLT: xpath_xslt.md
-#  - RSS: rss.md
 #  - SVG: svg.md
 #  - JSON: json.md
 #  - Retos: retos.md
+
 plugins:
-  - search:
-      lang: es
+ - mermaid2:
+      version: 10.0.2
+      javascript: https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs
+ - search:
+      lang: es     # opcional: mejora el buscador para español
+
+extra_css:
+  - css/base.css
+
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -54,10 +63,4 @@ markdown_extensions:
   - toc:
       permalink: true
   - admonition
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.details
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.snippets
+
