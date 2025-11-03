@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../html_referencias/">
+      
+      
+        <link rel="next" href="../js-formularios/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>XPath & XSLT - LMSGI ASIX — Lenguajes de Marcas</title>
+        <title>Javascript - LMSGI ASIX — Lenguajes de Marcas</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xpath-xslt" class="md-skip">
+        <a href="#practica-inicial-introduccion-a-javascript" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              XPath &amp; XSLT
+              Javascript
             
           </span>
         </div>
@@ -338,9 +342,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../js-intro/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -584,10 +590,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../js-intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Javascript
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -598,6 +626,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-estructura-base-de-un-documento-con-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Estructura base de un documento con JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-variables-y-tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Variables y tipos de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-operaciones-y-condicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Operaciones y condicionales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-funciones-basicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Funciones básicas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-entrada-de-datos-con-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Entrada de datos con prompt()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -662,59 +773,140 @@
 
 
 
-<h1 id="xpath-xslt">XPath &amp; XSLT<a class="headerlink" href="#xpath-xslt" title="Permanent link">&para;</a></h1>
-<p><strong>XPath</strong> selecciona nodos en XML; <strong>XSLT</strong> los transforma (p. ej., a HTML).</p>
-<h2 id="xpath-ejemplos">XPath (ejemplos)<a class="headerlink" href="#xpath-ejemplos" title="Permanent link">&para;</a></h2>
-<pre><code class="language-xpath">/catalogo/curso
-/catalogo/curso[@id='ASIX1']
-//modulo[@horas&gt;130]
-/catalogo/curso[nombre='ASIX 2']
-//modulo[contains(., 'Sistemas')]
-</code></pre>
-<h2 id="xslt-de-ejemplo">XSLT de ejemplo<a class="headerlink" href="#xslt-de-ejemplo" title="Permanent link">&para;</a></h2>
-<pre><code class="language-xsl">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
-  &lt;xsl:output method=&quot;html&quot; version=&quot;5&quot; encoding=&quot;UTF-8&quot; indent=&quot;yes&quot;/&gt;
-  &lt;xsl:template match=&quot;/&quot;&gt;
-    &lt;html lang=&quot;es&quot;&gt;
-      &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;/&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&gt;
-        &lt;title&gt;Catálogo de cursos&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;h1&gt;Catálogo de cursos&lt;/h1&gt;
-        &lt;xsl:for-each select=&quot;catalogo/curso&quot;&gt;
-          &lt;h2&gt;&lt;xsl:value-of select=&quot;nombre&quot;/&gt;&lt;/h2&gt;
-          &lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;Código&lt;/th&gt;
-                &lt;th&gt;Horas&lt;/th&gt;
-                &lt;th&gt;Nombre&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;xsl:for-each select=&quot;modulos/modulo&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td&gt;&lt;xsl:value-of select=&quot;@codigo&quot;/&gt;&lt;/td&gt;
-                  &lt;td&gt;&lt;xsl:value-of select=&quot;@horas&quot;/&gt;&lt;/td&gt;
-                  &lt;td&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/xsl:for-each&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/xsl:for-each&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;
-  &lt;/xsl:template&gt;
-&lt;/xsl:stylesheet&gt;
+<h1 id="practica-inicial-introduccion-a-javascript">Práctica inicial — Introducción a JavaScript<a class="headerlink" href="#practica-inicial-introduccion-a-javascript" title="Permanent link">&para;</a></h1>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
+<p>Comprender y practicar los fundamentos del lenguaje JavaScript:</p>
+<ul>
+<li>Cómo incluir código JS en una página HTML.</li>
+<li>Cómo declarar variables y mostrar información.</li>
+<li>Cómo realizar operaciones simples.</li>
+<li>Cómo usar condiciones y funciones básicas.</li>
+<li>Cómo mostrar resultados en pantalla o en la consola.</li>
+</ul>
+<hr />
+<h2 id="1-estructura-base-de-un-documento-con-javascript">1. Estructura base de un documento con JavaScript<a class="headerlink" href="#1-estructura-base-de-un-documento-con-javascript" title="Permanent link">&para;</a></h2>
+<p>Crea un archivo llamado <strong><code>index.html</code></strong> con el siguiente contenido:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Práctica JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Mi primera práctica con JavaScript&lt;/h1&gt;
 
+  &lt;script&gt;
+    // Aquí escribiremos nuestro código
+    alert(&quot;Bienvenido al mundo de JavaScript&quot;);
+    console.log(&quot;Este mensaje aparece en la consola&quot;);
+    document.write(&quot;&lt;p&gt;JavaScript está funcionando correctamente&lt;/p&gt;&quot;);
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
-<div class="admonition exercise">
-<p class="admonition-title">Actividad</p>
-<p>Ordena los módulos por <code>@horas</code> (mayor a menor) y añade una fila de totales.</p>
-</div>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Abre el archivo en el navegador.  </li>
+<li>Explica qué hace cada línea (<code>alert</code>, <code>console.log</code>, <code>document.write</code>).  </li>
+<li>Añade un comentario en el código explicando qué aprendiste.</li>
+</ol>
+<p><strong>Amplía:</strong><br />
+<a href="https://www.w3schools.com/js/js_intro.asp">W3Schools - Introducción a JavaScript</a></p>
+<hr />
+<h2 id="2-variables-y-tipos-de-datos">2. Variables y tipos de datos<a class="headerlink" href="#2-variables-y-tipos-de-datos" title="Permanent link">&para;</a></h2>
+<p>En el mismo archivo, sustituye el contenido del <code>&lt;script&gt;</code> por lo siguiente:</p>
+<pre><code class="language-html">&lt;script&gt;
+  let nombre = &quot;Ana&quot;;
+  let edad = 20;
+  const PI = 3.1416;
+
+  document.write(&quot;&lt;p&gt;Hola, &quot; + nombre + &quot;. Tienes &quot; + edad + &quot; años.&lt;/p&gt;&quot;);
+  document.write(&quot;&lt;p&gt;El valor de PI es: &quot; + PI + &quot;&lt;/p&gt;&quot;);
+&lt;/script&gt;
+</code></pre>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Cambia los valores de las variables y observa los resultados.  </li>
+<li>Añade una nueva variable llamada <code>ciudad</code> y muéstrala en pantalla.  </li>
+<li>Experimenta con <code>console.log()</code> para mostrar las variables en la consola.</li>
+</ol>
+<p><strong>Amplía:</strong><br />
+<a href="https://www.w3schools.com/js/js_variables.asp">W3Schools - Variables</a><br />
+<a href="https://www.w3schools.com/js/js_datatypes.asp">W3Schools - Tipos de datos</a></p>
+<hr />
+<h2 id="3-operaciones-y-condicionales">3. Operaciones y condicionales<a class="headerlink" href="#3-operaciones-y-condicionales" title="Permanent link">&para;</a></h2>
+<p>Modifica el script para incluir operaciones simples:</p>
+<pre><code class="language-html">&lt;script&gt;
+  let num1 = 10;
+  let num2 = 5;
+
+  let suma = num1 + num2;
+  let resta = num1 - num2;
+
+  document.write(&quot;&lt;p&gt;La suma es: &quot; + suma + &quot;&lt;/p&gt;&quot;);
+  document.write(&quot;&lt;p&gt;La resta es: &quot; + resta + &quot;&lt;/p&gt;&quot;);
+
+  if (num1 &gt; num2) {
+    document.write(&quot;&lt;p&gt;&quot; + num1 + &quot; es mayor que &quot; + num2 + &quot;&lt;/p&gt;&quot;);
+  } else {
+    document.write(&quot;&lt;p&gt;&quot; + num1 + &quot; no es mayor que &quot; + num2 + &quot;&lt;/p&gt;&quot;);
+  }
+&lt;/script&gt;
+</code></pre>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Cambia los valores y prueba otras operaciones (<code>*</code>, <code>/</code>, <code>%</code>).  </li>
+<li>Crea una condición que indique si un número es par o impar.</li>
+</ol>
+<p><strong>Amplía:</strong><br />
+<a href="https://www.w3schools.com/js/js_operators.asp">W3Schools - Operadores</a><br />
+<a href="https://www.w3schools.com/js/js_if_else.asp">W3Schools - Condicionales</a></p>
+<hr />
+<h2 id="4-funciones-basicas">4. Funciones básicas<a class="headerlink" href="#4-funciones-basicas" title="Permanent link">&para;</a></h2>
+<p>Agrega una pequeña función para saludar al usuario:</p>
+<pre><code class="language-html">&lt;script&gt;
+  function saludar(nombre) {
+    return &quot;Hola, &quot; + nombre + &quot;!&quot;;
+  }
+
+  let mensaje = saludar(&quot;Carlos&quot;);
+  document.write(&quot;&lt;p&gt;&quot; + mensaje + &quot;&lt;/p&gt;&quot;);
+&lt;/script&gt;
+</code></pre>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Cambia el nombre pasado a la función.  </li>
+<li>Crea una función que calcule el cuadrado de un número (<code>n * n</code>) y la muestre.</li>
+</ol>
+<p><strong>Amplía:</strong><br />
+<a href="https://www.w3schools.com/js/js_functions.asp">W3Schools - Funciones</a></p>
+<hr />
+<h2 id="5-entrada-de-datos-con-prompt">5. Entrada de datos con <code>prompt()</code><a class="headerlink" href="#5-entrada-de-datos-con-prompt" title="Permanent link">&para;</a></h2>
+<p>Permite que el usuario introduzca información:</p>
+<pre><code class="language-html">&lt;script&gt;
+  let nombre = prompt(&quot;¿Cómo te llamas?&quot;);
+  document.write(&quot;&lt;h2&gt;Bienvenido, &quot; + nombre + &quot;!&lt;/h2&gt;&quot;);
+&lt;/script&gt;
+</code></pre>
+<p><strong>Tareas:</strong></p>
+<ol>
+<li>Añade otro <code>prompt</code> para pedir la edad.  </li>
+<li>Muestra un mensaje distinto si el usuario tiene menos de 18 años.</li>
+</ol>
+<p><strong>Amplía:</strong><br />
+<a href="https://www.w3schools.com/js/js_popup.asp">W3Schools - Ventanas emergentes</a></p>
+<hr />
+<h2 id="6-conclusion">6. Conclusión<a class="headerlink" href="#6-conclusion" title="Permanent link">&para;</a></h2>
+<p>Con esta práctica ya has utilizado:</p>
+<ul>
+<li>Variables (<code>let</code>, <code>const</code>).</li>
+<li>Operaciones y condiciones.</li>
+<li>Funciones.</li>
+<li>Salida en pantalla (<code>document.write</code>, <code>console.log</code>, <code>alert</code>).</li>
+<li>Entrada de datos (<code>prompt</code>).</li>
+</ul>
+<p>A partir de aquí puedes continuar con ejercicios interactivos en:<br />
+<a href="https://www.w3schools.com/js/exercise_js.asp">W3Schools JavaScript Exercises</a></p>
 
 
 

@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../js-intro/">
+      
+      
+        <link rel="next" href="../js-formularios-referencias/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>XPath & XSLT - LMSGI ASIX — Lenguajes de Marcas</title>
+        <title>Javascript-Formularios - LMSGI ASIX — Lenguajes de Marcas</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xpath-xslt" class="md-skip">
+        <a href="#introduccion-a-javascript-gestion-de-formularios" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              XPath &amp; XSLT
+              Javascript-Formularios
             
           </span>
         </div>
@@ -357,9 +361,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../js-formularios/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -606,10 +612,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../js-formularios/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Formularios
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -620,6 +648,254 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexto-y-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Contexto y objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-primer-contacto-con-el-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Primer contacto con el código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Primer contacto con el código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos clave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-primer-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 1 — Primer script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-variables-y-tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Variables y tipos de datos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Variables y tipos de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-variables-y-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos variables y tipos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-saludo-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 2 — Saludo personalizado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-operaciones-y-logica-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Operaciones y lógica básica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Operaciones y lógica básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-comparar-numeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 3 — Comparar números
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-interactuar-con-el-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Interactuar con el DOM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Interactuar con el DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos DOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-leer-un-campo-de-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 4 — Leer un campo de texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-formularios-y-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Formularios y eventos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Formularios y eventos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos Formularios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-5-formulario-con-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 5 — Formulario con validación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad final
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -662,59 +938,245 @@
 
 
 
-<h1 id="xpath-xslt">XPath &amp; XSLT<a class="headerlink" href="#xpath-xslt" title="Permanent link">&para;</a></h1>
-<p><strong>XPath</strong> selecciona nodos en XML; <strong>XSLT</strong> los transforma (p. ej., a HTML).</p>
-<h2 id="xpath-ejemplos">XPath (ejemplos)<a class="headerlink" href="#xpath-ejemplos" title="Permanent link">&para;</a></h2>
-<pre><code class="language-xpath">/catalogo/curso
-/catalogo/curso[@id='ASIX1']
-//modulo[@horas&gt;130]
-/catalogo/curso[nombre='ASIX 2']
-//modulo[contains(., 'Sistemas')]
-</code></pre>
-<h2 id="xslt-de-ejemplo">XSLT de ejemplo<a class="headerlink" href="#xslt-de-ejemplo" title="Permanent link">&para;</a></h2>
-<pre><code class="language-xsl">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
-  &lt;xsl:output method=&quot;html&quot; version=&quot;5&quot; encoding=&quot;UTF-8&quot; indent=&quot;yes&quot;/&gt;
-  &lt;xsl:template match=&quot;/&quot;&gt;
-    &lt;html lang=&quot;es&quot;&gt;
-      &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;/&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&gt;
-        &lt;title&gt;Catálogo de cursos&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;h1&gt;Catálogo de cursos&lt;/h1&gt;
-        &lt;xsl:for-each select=&quot;catalogo/curso&quot;&gt;
-          &lt;h2&gt;&lt;xsl:value-of select=&quot;nombre&quot;/&gt;&lt;/h2&gt;
-          &lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;Código&lt;/th&gt;
-                &lt;th&gt;Horas&lt;/th&gt;
-                &lt;th&gt;Nombre&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;xsl:for-each select=&quot;modulos/modulo&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td&gt;&lt;xsl:value-of select=&quot;@codigo&quot;/&gt;&lt;/td&gt;
-                  &lt;td&gt;&lt;xsl:value-of select=&quot;@horas&quot;/&gt;&lt;/td&gt;
-                  &lt;td&gt;&lt;xsl:value-of select=&quot;.&quot;/&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/xsl:for-each&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/xsl:for-each&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;
-  &lt;/xsl:template&gt;
-&lt;/xsl:stylesheet&gt;
+<h1 id="introduccion-a-javascript-gestion-de-formularios">Introducción a JavaScript — Gestión de formularios<a class="headerlink" href="#introduccion-a-javascript-gestion-de-formularios" title="Permanent link">&para;</a></h1>
+<p><strong>Objetivo general:</strong> aprender a crear scripts básicos en JavaScript que interactúen con formularios HTML.</p>
+<hr />
+<h2 id="1-contexto-y-objetivos">1. Contexto y objetivos<a class="headerlink" href="#1-contexto-y-objetivos" title="Permanent link">&para;</a></h2>
+<p>JavaScript es el lenguaje que da interactividad a las páginas web.</p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML</td>
+<td>Estructura del contenido</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>Diseño y estilos</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>Lógica e interacción</td>
+</tr>
+</tbody>
+</table>
+<p>Qué haremos hoy:</p>
+<ul>
+<li>Crear variables y ejecutar código.</li>
+<li>Leer datos del usuario.</li>
+<li>Validar un formulario antes de enviarlo.</li>
+</ul>
+<hr />
+<h2 id="2-primer-contacto-con-el-codigo">2. Primer contacto con el código<a class="headerlink" href="#2-primer-contacto-con-el-codigo" title="Permanent link">&para;</a></h2>
+<h3 id="conceptos-clave">Conceptos clave<a class="headerlink" href="#conceptos-clave" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Etiqueta <code>&lt;script&gt;</code>: permite insertar JS en HTML.</li>
+<li>Lugares posibles:</li>
+<li>Dentro del <code>&lt;head&gt;</code>.</li>
+<li>Al final del <code>&lt;body&gt;</code> (recomendado).</li>
+<li>Salida de información:<br />
+<code>alert()</code>, <code>console.log()</code>, <code>document.write()</code>.</li>
+</ul>
+<h3 id="ejemplo-1-primer-script">Ejemplo 1 — Primer script<a class="headerlink" href="#ejemplo-1-primer-script" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Mi primer script&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hola JavaScript&lt;/h1&gt;
 
+  &lt;script&gt;
+    alert(&quot;¡Bienvenido a JavaScript!&quot;);
+    console.log(&quot;Esto se muestra en la consola del navegador.&quot;);
+    document.write(&quot;JavaScript está funcionando correctamente&quot;);
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
-<div class="admonition exercise">
-<p class="admonition-title">Actividad</p>
-<p>Ordena los módulos por <code>@horas</code> (mayor a menor) y añade una fila de totales.</p>
-</div>
+<h3 id="actividad-1">Actividad 1<a class="headerlink" href="#actividad-1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Abre el archivo en tu navegador.  </li>
+<li>Observa los tres tipos de salida.  </li>
+<li>Explica la diferencia entre cada uno.</li>
+</ol>
+<hr />
+<h2 id="3-variables-y-tipos-de-datos">3. Variables y tipos de datos<a class="headerlink" href="#3-variables-y-tipos-de-datos" title="Permanent link">&para;</a></h2>
+<h3 id="conceptos-variables-y-tipos">Conceptos variables y tipos<a class="headerlink" href="#conceptos-variables-y-tipos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Declaración:</li>
+</ul>
+<p><code>let nombre = "Ana";
+  const PI = 3.14;
+  var edad = 18;</code></p>
+<ul>
+<li>
+<p>Tipos básicos:</p>
+<ul>
+<li><code>string</code> (texto)</li>
+<li><code>number</code> (número)</li>
+<li><code>boolean</code> (true / false)</li>
+</ul>
+</li>
+<li>
+<p>Concatenar texto:
+    <code>"Hola " + nombre</code></p>
+</li>
+</ul>
+<h3 id="ejemplo-2-saludo-personalizado">Ejemplo 2 — Saludo personalizado<a class="headerlink" href="#ejemplo-2-saludo-personalizado" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;script&gt;
+  let nombre = prompt(&quot;¿Cómo te llamas?&quot;);
+  let edad = prompt(&quot;¿Cuántos años tienes?&quot;);
+  document.write(&quot;Hola &quot; + nombre + &quot;, tienes &quot; + edad + &quot; años.&quot;);
+&lt;/script&gt;
+</code></pre>
+<h3 id="actividad-2">Actividad 2<a class="headerlink" href="#actividad-2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ejecuta el script y observa el resultado.  </li>
+<li>Añade una línea:</li>
+</ol>
+<p><code>js
+   console.log(typeof edad);</code></p>
+<ol>
+<li>¿Qué tipo de dato devuelve? ¿Por qué?</li>
+</ol>
+<hr />
+<h2 id="4-operaciones-y-logica-basica">4. Operaciones y lógica básica<a class="headerlink" href="#4-operaciones-y-logica-basica" title="Permanent link">&para;</a></h2>
+<h3 id="conceptos">Conceptos<a class="headerlink" href="#conceptos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Operadores aritméticos: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+<li>Operadores de comparación: <code>===</code>, <code>&gt;</code>, <code>&lt;</code></li>
+<li>Condicionales:</li>
+</ul>
+<p><code>js
+  if (condición) { ... } else { ... }</code></p>
+<h3 id="ejemplo-3-comparar-numeros">Ejemplo 3 — Comparar números<a class="headerlink" href="#ejemplo-3-comparar-numeros" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;script&gt;
+  let num1 = parseInt(prompt(&quot;Introduce un número:&quot;));
+  let num2 = parseInt(prompt(&quot;Introduce otro número:&quot;));
+
+  if (num1 &gt; num2) {
+    document.write(num1 + &quot; es mayor que &quot; + num2);
+  } else if (num1 &lt; num2) {
+    document.write(num1 + &quot; es menor que &quot; + num2);
+  } else {
+    document.write(&quot;Ambos números son iguales&quot;);
+  }
+&lt;/script&gt;
+</code></pre>
+<h3 id="actividad-3">Actividad 3<a class="headerlink" href="#actividad-3" title="Permanent link">&para;</a></h3>
+<p>Modifica el código para mostrar si los números son pares o impares.<br />
+Pista: usa <code>num1 % 2 === 0</code></p>
+<hr />
+<h2 id="5-interactuar-con-el-dom">5. Interactuar con el DOM<a class="headerlink" href="#5-interactuar-con-el-dom" title="Permanent link">&para;</a></h2>
+<h3 id="conceptos-dom">Conceptos DOM<a class="headerlink" href="#conceptos-dom" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El DOM (Document Object Model) es la estructura interna del HTML.  </li>
+<li>Podemos acceder a los elementos:</li>
+</ul>
+<p><code>js
+  document.getElementById("id")
+  document.querySelector("selector")</code></p>
+<ul>
+<li>Propiedades comunes:</li>
+<li><code>.value</code></li>
+<li><code>.innerText</code></li>
+<li><code>.style</code></li>
+</ul>
+<h3 id="ejemplo-4-leer-un-campo-de-texto">Ejemplo 4 — Leer un campo de texto<a class="headerlink" href="#ejemplo-4-leer-un-campo-de-texto" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;h2&gt;Lectura del DOM&lt;/h2&gt;
+  &lt;input type=&quot;text&quot; id=&quot;nombre&quot; placeholder=&quot;Escribe tu nombre&quot;&gt;
+  &lt;button id=&quot;boton&quot;&gt;Mostrar&lt;/button&gt;
+  &lt;p id=&quot;resultado&quot;&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    const boton = document.getElementById(&quot;boton&quot;);
+    const nombreInput = document.getElementById(&quot;nombre&quot;);
+    const resultado = document.getElementById(&quot;resultado&quot;);
+
+    boton.addEventListener(&quot;click&quot;, () =&gt; {
+      const nombre = nombreInput.value;
+      resultado.innerText = &quot;Hola &quot; + nombre;
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<h3 id="actividad">Actividad<a class="headerlink" href="#actividad" title="Permanent link">&para;</a></h3>
+<p>Añade un campo edad y muestra un mensaje diferente según el valor:</p>
+<ul>
+<li>Si &lt; 18 → “Eres menor de edad”</li>
+<li>Si ≥ 18 → “Eres mayor de edad”</li>
+</ul>
+<hr />
+<h2 id="6-formularios-y-eventos">6. Formularios y eventos<a class="headerlink" href="#6-formularios-y-eventos" title="Permanent link">&para;</a></h2>
+<h3 id="conceptos-formularios">Conceptos Formularios<a class="headerlink" href="#conceptos-formularios" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El evento <code>submit</code> se lanza al enviar un formulario.</li>
+<li><code>event.preventDefault()</code> impide el envío real.</li>
+<li>Validar datos = comprobar que no estén vacíos o que cumplan un formato.</li>
+</ul>
+<h3 id="ejemplo-5-formulario-con-validacion">Ejemplo 5 — Formulario con validación<a class="headerlink" href="#ejemplo-5-formulario-con-validacion" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;h2&gt;Formulario de contacto&lt;/h2&gt;
+  &lt;form id=&quot;formulario&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;nombre&quot; placeholder=&quot;Nombre&quot;&gt;&lt;br&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Correo&quot;&gt;&lt;br&gt;
+    &lt;button type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;p id=&quot;mensaje&quot;&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    const form = document.getElementById(&quot;formulario&quot;);
+    const mensaje = document.getElementById(&quot;mensaje&quot;);
+
+    form.addEventListener(&quot;submit&quot;, (event) =&gt; {
+      event.preventDefault();
+
+      const nombre = document.getElementById(&quot;nombre&quot;).value.trim();
+      const email = document.getElementById(&quot;email&quot;).value.trim();
+
+      if (nombre === &quot;&quot; || email === &quot;&quot;) {
+        mensaje.innerText = &quot;Rellena todos los campos.&quot;;
+        mensaje.style.color = &quot;red&quot;;
+      } else {
+        mensaje.innerText = &quot;Formulario enviado correctamente.&quot;;
+        mensaje.style.color = &quot;green&quot;;
+        form.reset();
+      }
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<h3 id="actividad-4">Actividad 4<a class="headerlink" href="#actividad-4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Prueba el formulario sin rellenar → mensaje de error.  </li>
+<li>Rellénalo → mensaje de éxito.  </li>
+<li>Añade una validación que compruebe que el correo contiene “@”.</li>
+</ol>
+<hr />
+<h2 id="actividad-final">Actividad final<a class="headerlink" href="#actividad-final" title="Permanent link">&para;</a></h2>
+<p>Crea un formulario con los campos:</p>
+<ul>
+<li>Nombre  </li>
+<li>Edad  </li>
+<li>Email  </li>
+<li>Comentario  </li>
+</ul>
+<p>Valida que:</p>
+<ul>
+<li>Todos los campos estén completos.</li>
+<li>La edad sea un número mayor que 0.  </li>
+<li>El email contenga <code>@</code>.  </li>
+</ul>
+<p>Si todo es correcto, muestra un mensaje personalizado en pantalla.</p>
 
 
 

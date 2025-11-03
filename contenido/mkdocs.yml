@@ -36,7 +36,11 @@ nav:
   - Flex: html_flex.md
   - CSS: css.md
   - CSS-Práctica: css_practica.md
-  - Referencias: html_referencias.md
+  - Referencias HTML&CSS: html_referencias.md
+  - Javascript: js-intro.md
+  - Javascript-Formularios: js-formularios.md
+  - Javascript-Referencias: js-formularios-referencias.md
+
 
 #  - XML + DTD + XSD: xml_dtd_xsd.md
 #  - XPath & XSLT: xpath_xslt.md
