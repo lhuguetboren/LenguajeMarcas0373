@@ -226,11 +226,8 @@ parrafo.style.fontSize = "20px";
 
 Permite modificar **estilos CSS en línea** del elemento mediante JavaScript.
 
-### Ejemplo 4 — Leer un campo de texto
 
-Tenemos que hablar  de los eventos para poder leer un campo de texto, pero...
-
-## ¿Qué es un evento en JavaScript?
+## 6. Eventos en  JavaScript
 
 Un **evento** es cualquier acción o suceso que ocurre en la página web y que el navegador puede detectar.  
 Tu código JavaScript puede **escuchar** esos eventos y **responder** ejecutando una función.
@@ -239,7 +236,7 @@ Tu código JavaScript puede **escuchar** esos eventos y **responder** ejecutando
 
 ---
 
-## Ejemplos de eventos comunes
+### Ejemplos de eventos comunes
 
 - `click` — cuando el usuario hace clic en un elemento
 - `input` — cuando el usuario escribe en un campo
@@ -250,7 +247,7 @@ Tu código JavaScript puede **escuchar** esos eventos y **responder** ejecutando
 
 ---
 
-## ¿Cómo se usan los eventos?
+### ¿Cómo se usan los eventos?
 
 Los eventos se gestionan mediante *manejadores de eventos* (**event listeners**):
 
@@ -282,16 +279,9 @@ En el ejemplo que vamos a trabajar:
 </body>
 ```
 
-### Actividad
 
-Añade un campo edad y muestra un mensaje diferente según el valor:
 
-- Si < 18 → “Eres menor de edad”
-- Si ≥ 18 → “Eres mayor de edad”
-
----
-
-## 6. Formularios y eventos
+## 7. Formularios y eventos
 
 Un formulario (`<form>`) en HTML es un contenedor que agrupa campos donde el usuario puede introducir datos, como texto, correos, contraseñas, opciones o archivos.  
 Es el elemento principal para recoger información y procesarla mediante JavaScript o enviarla a un servidor.
@@ -389,7 +379,7 @@ Cuando un usuario interactúa con una página web —escribe en un formulario, h
 
 ---
 
-## De los conceptos a la práctica
+## 8. De los conceptos a la práctica
 
 ### Pasos para controlar un formulario
 
