@@ -1,7 +1,7 @@
 # Práctica: Formulario de Suscripción al Periódico
 
 ## 1. Objetivo de la práctica
-Crear un formulario de suscripción para **El Diari Digital** utilizando:
+Crear un formulario de suscripción para **El Diari Digital** utilizando esta plantilla [diarioDigital](diarioDigital.zip):
 
 - `select`
 - `checkbox`
