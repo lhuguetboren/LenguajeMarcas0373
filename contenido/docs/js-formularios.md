@@ -14,136 +14,8 @@ JavaScript es el lenguaje que da interactividad a las páginas web.
 | CSS | Diseño y estilos |
 | JavaScript | Lógica e interacción |
 
-Qué haremos hoy:
 
-- Crear variables y ejecutar código.
-- Leer datos del usuario.
-- Validar un formulario antes de enviarlo.
-
----
-
-## 2. Primer contacto con el código
-
-### Conceptos clave
-
-- Etiqueta `<script>`: permite insertar JS en HTML.
-- Lugares posibles:
-  - Dentro del `<head>`.
-  - Al final del `<body>` (recomendado).
-- Salida de información:  
-  `alert()`, `console.log()`, `document.write()`.
-
-### Ejemplo 1 — Primer script
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi primer script</title>
-</head>
-<body>
-  <h1>Hola JavaScript</h1>
-
-  <script>
-    alert("¡Bienvenido a JavaScript!");
-    console.log("Esto se muestra en la consola del navegador.");
-    document.write("JavaScript está funcionando correctamente");
-  </script>
-</body>
-</html>
-```
-
-### Actividad 1
-
-1. Abre el archivo en tu navegador.  
-2. Observa los tres tipos de salida.  
-3. Explica la diferencia entre cada uno.
-
----
-
-## 3. Variables y tipos de datos
-
-### Conceptos variables y tipos
-
-- Declaración:
-  
-  ```
-  let nombre = "Ana";
-  const PI = 3.14;
-  var edad = 18;
-  ```
-
-- Tipos básicos:
-    - `string` (texto)
-    - `number` (número)
-    - `boolean` (true / false)
-
-- Concatenar texto:
-    ```
-    "Hola " + nombre
-    ```
-
-### Ejemplo 2 — Saludo personalizado
-
-```html
-<script>
-  let nombre = prompt("¿Cómo te llamas?");
-  let edad = prompt("¿Cuántos años tienes?");
-  document.write("Hola " + nombre + ", tienes " + edad + " años.");
-</script>
-```
-
-### Actividad 2
-
-1. Ejecuta el script y observa el resultado.  
-2. Añade una línea:
-
-   ```js
-   console.log(typeof edad);
-   ```
-
-3. ¿Qué tipo de dato devuelve? ¿Por qué?
-
----
-
-## 4. Operaciones y lógica básica
-
-### Conceptos
-
-- Operadores aritméticos: `+`, `-`, `*`, `/`
-- Operadores de comparación: `===`, `>`, `<`
-- Condicionales:
-
-  ```js
-  if (condición) { ... } else { ... }
-  ```
-
-### Ejemplo 3 — Comparar números
-
-```html
-<script>
-  let num1 = parseInt(prompt("Introduce un número:"));
-  let num2 = parseInt(prompt("Introduce otro número:"));
-
-  if (num1 > num2) {
-    document.write(num1 + " es mayor que " + num2);
-  } else if (num1 < num2) {
-    document.write(num1 + " es menor que " + num2);
-  } else {
-    document.write("Ambos números son iguales");
-  }
-</script>
-```
-
-### Actividad 3
-
-Modifica el código para mostrar si los números son pares o impares.  
-Pista: usa `num1 % 2 === 0`
-
----
-
-## 5. Interactuar con el DOM
+## 2. Interactuar con el DOM
 
 ### Conceptos DOM
 
@@ -227,7 +99,7 @@ parrafo.style.fontSize = "20px";
 Permite modificar **estilos CSS en línea** del elemento mediante JavaScript.
 
 
-## 6. Eventos en  JavaScript
+## 3. Eventos en  JavaScript
 
 Un **evento** es cualquier acción o suceso que ocurre en la página web y que el navegador puede detectar.  
 Tu código JavaScript puede **escuchar** esos eventos y **responder** ejecutando una función.
@@ -281,7 +153,7 @@ En el ejemplo que vamos a trabajar:
 
 
 
-## 7. Formularios y eventos
+## 4. Formularios y eventos
 
 Un formulario (`<form>`) en HTML es un contenedor que agrupa campos donde el usuario puede introducir datos, como texto, correos, contraseñas, opciones o archivos.  
 Es el elemento principal para recoger información y procesarla mediante JavaScript o enviarla a un servidor.
@@ -379,7 +251,7 @@ Cuando un usuario interactúa con una página web —escribe en un formulario, h
 
 ---
 
-## 8. De los conceptos a la práctica
+## 5. De los conceptos a la práctica
 
 ### Pasos para controlar un formulario
 
