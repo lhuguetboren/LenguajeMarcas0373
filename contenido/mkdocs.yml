@@ -1,5 +1,7 @@
 site_name: LMSGI ASIX — Lenguajes de Marcas
 site_description: Documentación en Markdown para 1º de ASIX (HTML, XML/DTD/XSD, XPath/XSLT, RSS, SVG, JSON)
+docs_dir: PHP_JSON
+site_dir: PHP_SITE
 theme:
   name: material
   language: es
@@ -30,17 +32,15 @@ theme:
 # edit_uri: edit/main/docs/
 
 nav: 
-  - Introducción: html.md
-  - Tags y atributos: html_atributos.md
-  - HTML-Práctica: practicas_html.md
-  - Flex: html_flex.md
-  - CSS: css.md
-  - CSS-Práctica: css_practica.md
-  - Referencias HTML&CSS: html_referencias.md
-  - Javascript: js-intro.md
-  - Javascript-Formularios: js-formularios.md
-  - Javascript-Práctica: js-formularios-practica.md
-  - Javascript-Referencias: js-formularios-referencias.md
+index: index.md
+PHP:
+  - Introducción: php1.md
+  - Variables y arrays simples: php2.md
+  - Arrays asociativos y JSON: php3.md
+  - Integración con HTML y Js: php4.md
+  - Flujo Cliente-Serivodr: php5.md
+  - Proyecto integrador: php_proyecto.md
+  - Referencias: php_referencias.md
 
 
 #  - XML + DTD + XSD: xml_dtd_xsd.md

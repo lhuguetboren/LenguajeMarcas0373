@@ -1,0 +1,1348 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación en Markdown para 1º de ASIX (HTML, XML/DTD/XSD, XPath/XSLT, RSS, SVG, JSON)">
+      
+      
+      
+      
+        <link rel="prev" href="../js-formularios-practica/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Javascript-Referencias - LMSGI ASIX — Lenguajes de Marcas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/base.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#glosario-y-referencias-elementos-de-javascript-y-html-utilizados" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="LMSGI ASIX — Lenguajes de Marcas" class="md-header__button md-logo" aria-label="LMSGI ASIX — Lenguajes de Marcas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LMSGI ASIX — Lenguajes de Marcas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Javascript-Referencias
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_atributos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags y atributos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../practicas_html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  HTML-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_flex/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css_practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias HTML&CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Formularios
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios-practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Referencias
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LMSGI ASIX — Lenguajes de Marcas" class="md-nav__button md-logo" aria-label="LMSGI ASIX — Lenguajes de Marcas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LMSGI ASIX — Lenguajes de Marcas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_atributos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags y atributos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practicas_html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_flex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Flex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias HTML&CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Formularios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios-practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Referencias
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Referencias
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-elementos-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Elementos HTML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-elementos-y-metodos-de-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Elementos y métodos de JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Elementos y métodos de JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-funciones-basicas-de-salida-y-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Funciones básicas de salida y entrada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-variables-y-tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Variables y tipos de datos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-operadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Operadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-condicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Condicionales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-funciones-y-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5. Funciones y eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-acceso-y-manipulacion-del-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6. Acceso y manipulación del DOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-conversion-y-manipulacion-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7. Conversión y manipulación de datos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-buenas-practicas-vistas-en-los-ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Buenas prácticas vistas en los ejemplos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-resumen-general-de-conceptos-introducidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Resumen general de conceptos introducidos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-referencias-aprendizaje-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Referencias aprendizaje JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="glosario-y-referencias-elementos-de-javascript-y-html-utilizados">Glosario y referencias— Elementos de JavaScript y HTML utilizados<a class="headerlink" href="#glosario-y-referencias-elementos-de-javascript-y-html-utilizados" title="Permanent link">&para;</a></h1>
+<h2 id="1-elementos-html">1. Elementos HTML<a class="headerlink" href="#1-elementos-html" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Descripción</th>
+<th>Ejemplo / Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+<td>Indica al navegador que el documento está escrito en HTML5.</td>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;html&gt;</code></td>
+<td>Elemento raíz del documento HTML. Contiene todo el contenido de la página.</td>
+<td><code>&lt;html lang="es"&gt; ... &lt;/html&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;head&gt;</code></td>
+<td>Contiene metadatos, enlaces a CSS o JS, y el título de la página.</td>
+<td><code>&lt;head&gt;&lt;title&gt;Mi página&lt;/title&gt;&lt;/head&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+<td>Define la codificación de caracteres (UTF-8 permite tildes y ñ).</td>
+<td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Define el título que aparece en la pestaña del navegador.</td>
+<td><code>&lt;title&gt;Ejemplo JS&lt;/title&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td>Contiene todo el contenido visible del documento.</td>
+<td><code>&lt;body&gt;...&lt;/body&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code></td>
+<td>Encabezados de diferentes niveles. <code>&lt;h1&gt;</code> es el principal, <code>&lt;h2&gt;</code> un subtítulo.</td>
+<td><code>&lt;h1&gt;Hola&lt;/h1&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;p&gt;</code></td>
+<td>Párrafo de texto.</td>
+<td><code>&lt;p&gt;Texto de ejemplo&lt;/p&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;input&gt;</code></td>
+<td>Campo de entrada de datos en formularios. Puede ser de distintos tipos.</td>
+<td><code>&lt;input type="text" id="nombre"&gt;</code></td>
+</tr>
+<tr>
+<td><code>type</code> (atributo)</td>
+<td>Define el tipo de entrada (<code>text</code>, <code>email</code>, <code>number</code>, etc.).</td>
+<td><code>&lt;input type="email"&gt;</code></td>
+</tr>
+<tr>
+<td><code>id</code> (atributo)</td>
+<td>Identificador único del elemento, usado por JavaScript.</td>
+<td><code>&lt;input id="nombre"&gt;</code></td>
+</tr>
+<tr>
+<td><code>placeholder</code></td>
+<td>Texto que aparece como ejemplo dentro del campo hasta que el usuario escribe.</td>
+<td><code>&lt;input placeholder="Escribe tu nombre"&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;button&gt;</code></td>
+<td>Crea un botón que puede ejecutar código o enviar formularios.</td>
+<td><code>&lt;button id="boton"&gt;Enviar&lt;/button&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;form&gt;</code></td>
+<td>Agrupa campos y botones de un formulario.</td>
+<td><code>&lt;form id="formulario"&gt; ... &lt;/form&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;br&gt;</code></td>
+<td>Salto de línea.</td>
+<td><code>&lt;input&gt;&lt;br&gt;&lt;input&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;script&gt;</code></td>
+<td>Define o enlaza código JavaScript dentro del documento HTML.</td>
+<td><code>&lt;script&gt; ... &lt;/script&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-elementos-y-metodos-de-javascript">2. Elementos y métodos de JavaScript<a class="headerlink" href="#2-elementos-y-metodos-de-javascript" title="Permanent link">&para;</a></h2>
+<h3 id="21-funciones-basicas-de-salida-y-entrada">2.1. Funciones básicas de salida y entrada<a class="headerlink" href="#21-funciones-basicas-de-salida-y-entrada" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Función / Método</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alert()</code></td>
+<td>Muestra un cuadro de diálogo emergente con un mensaje.</td>
+<td><code>alert("Hola mundo");</code></td>
+</tr>
+<tr>
+<td><code>console.log()</code></td>
+<td>Muestra mensajes en la consola del navegador (útil para depurar).</td>
+<td><code>console.log("Prueba");</code></td>
+</tr>
+<tr>
+<td><code>document.write()</code></td>
+<td>Escribe directamente contenido en la página.</td>
+<td><code>document.write("Texto en pantalla");</code></td>
+</tr>
+<tr>
+<td><code>prompt()</code></td>
+<td>Solicita al usuario que introduzca un valor mediante una ventana emergente.</td>
+<td><code>let nombre = prompt("¿Tu nombre?");</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="22-variables-y-tipos-de-datos">2.2. Variables y tipos de datos<a class="headerlink" href="#22-variables-y-tipos-de-datos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Palabra clave</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>let</code></td>
+<td>Declara una variable con ámbito de bloque.</td>
+<td><code>let edad = 20;</code></td>
+</tr>
+<tr>
+<td><code>const</code></td>
+<td>Declara una constante (no se puede reasignar).</td>
+<td><code>const PI = 3.14;</code></td>
+</tr>
+<tr>
+<td><code>var</code></td>
+<td>Forma antigua de declarar variables (ámbito de función).</td>
+<td><code>var nombre = "Ana";</code></td>
+</tr>
+<tr>
+<td><code>typeof</code></td>
+<td>Devuelve el tipo de dato de una variable.</td>
+<td><code>typeof 3</code> → <code>"number"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tipos de datos vistos:</strong>
+- <code>string</code> → cadenas de texto (<code>"Hola"</code>)
+- <code>number</code> → números (<code>42</code>)
+- <code>boolean</code> → verdadero o falso (<code>true</code>, <code>false</code>)</p>
+<hr />
+<h3 id="23-operadores">2.3. Operadores<a class="headerlink" href="#23-operadores" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Operadores</th>
+<th>Ejemplo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aritméticos</td>
+<td><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></td>
+<td><code>5 + 2</code> → <code>7</code></td>
+<td>Operaciones matemáticas. <code>%</code> devuelve el resto.</td>
+</tr>
+<tr>
+<td>Comparación</td>
+<td><code>===</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></td>
+<td><code>a &gt; b</code></td>
+<td>Devuelven <code>true</code> o <code>false</code>.</td>
+</tr>
+<tr>
+<td>Lógicos</td>
+<td><code>&amp;&amp;</code>, <code>||</code>, <code>!</code></td>
+<td><code>a &gt; 0 &amp;&amp; b &lt; 5</code></td>
+<td>Combinan condiciones booleanas.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24-condicionales">2.4. Condicionales<a class="headerlink" href="#24-condicionales" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Estructura</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if</code> / <code>else if</code> / <code>else</code></td>
+<td>Evalúa condiciones y ejecuta bloques según el resultado.</td>
+<td><code>js if (x &gt; 0) { ... } else { ... }</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25-funciones-y-eventos">2.5. Funciones y eventos<a class="headerlink" href="#25-funciones-y-eventos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>function</code></td>
+<td>Define una función reutilizable.</td>
+<td><code>js function saludar() { alert("Hola"); }</code></td>
+</tr>
+<tr>
+<td><code>addEventListener()</code></td>
+<td>Asocia un evento (click, submit, etc.) a una función.</td>
+<td><code>boton.addEventListener("click", mostrar);</code></td>
+</tr>
+<tr>
+<td><code>event.preventDefault()</code></td>
+<td>Evita la acción por defecto de un evento (por ejemplo, que un formulario se envíe).</td>
+<td><code>event.preventDefault();</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Eventos usados:</strong>
+- <code>"click"</code> → al hacer clic en un botón.<br />
+- <code>"submit"</code> → al enviar un formulario.</p>
+<hr />
+<h3 id="26-acceso-y-manipulacion-del-dom">2.6. Acceso y manipulación del DOM<a class="headerlink" href="#26-acceso-y-manipulacion-del-dom" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Método / Propiedad</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>document.getElementById("id")</code></td>
+<td>Selecciona un elemento por su atributo <code>id</code>.</td>
+<td><code>const campo = document.getElementById("nombre");</code></td>
+</tr>
+<tr>
+<td><code>document.querySelector("selector")</code></td>
+<td>Selecciona el primer elemento que cumpla el selector CSS indicado.</td>
+<td><code>document.querySelector("p");</code></td>
+</tr>
+<tr>
+<td><code>.value</code></td>
+<td>Devuelve o cambia el valor de un campo de formulario.</td>
+<td><code>nombre.value = "Joan";</code></td>
+</tr>
+<tr>
+<td><code>.innerText</code></td>
+<td>Devuelve o modifica el texto visible dentro de un elemento.</td>
+<td><code>p.innerText = "Hola";</code></td>
+</tr>
+<tr>
+<td><code>.style</code></td>
+<td>Permite modificar propiedades CSS desde JavaScript.</td>
+<td><code>p.style.color = "red";</code></td>
+</tr>
+<tr>
+<td><code>.trim()</code></td>
+<td>Elimina espacios en blanco al principio y final de una cadena.</td>
+<td><code>" hola ".trim()</code> → <code>"hola"</code></td>
+</tr>
+<tr>
+<td><code>.reset()</code></td>
+<td>Limpia todos los campos de un formulario.</td>
+<td><code>form.reset();</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="27-conversion-y-manipulacion-de-datos">2.7. Conversión y manipulación de datos<a class="headerlink" href="#27-conversion-y-manipulacion-de-datos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Método / Función</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>parseInt()</code></td>
+<td>Convierte una cadena en número entero.</td>
+<td><code>parseInt("42")</code> → <code>42</code></td>
+</tr>
+<tr>
+<td><code>+variable</code></td>
+<td>Convierte un string numérico en número.</td>
+<td><code>+"10"</code> → <code>10</code></td>
+</tr>
+<tr>
+<td>Concatenación (<code>+</code>)</td>
+<td>Une textos o valores.</td>
+<td><code>"Hola " + nombre</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-buenas-practicas-vistas-en-los-ejemplos">3. Buenas prácticas vistas en los ejemplos<a class="headerlink" href="#3-buenas-practicas-vistas-en-los-ejemplos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Explicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Separar el JavaScript del HTML</td>
+<td>Mantener el código JS en archivos <code>.js</code> externos cuando crezcan los proyectos.</td>
+</tr>
+<tr>
+<td>Nombrar los elementos con <code>id</code> claros</td>
+<td>Facilita el acceso a los elementos desde el script.</td>
+</tr>
+<tr>
+<td>Usar <code>const</code> y <code>let</code> en lugar de <code>var</code></td>
+<td>Mejora la legibilidad y reduce errores.</td>
+</tr>
+<tr>
+<td>Validar datos antes de enviar un formulario</td>
+<td>Previene errores y mejora la experiencia del usuario.</td>
+</tr>
+<tr>
+<td>Usar <code>console.log()</code> para depurar</td>
+<td>Permite comprobar valores sin interrumpir la ejecución.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-resumen-general-de-conceptos-introducidos">4. Resumen general de conceptos introducidos<a class="headerlink" href="#4-resumen-general-de-conceptos-introducidos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>HTML: estructura del documento y elementos visibles.  </li>
+<li>DOM: representación interna que JavaScript usa para acceder y modificar la página.  </li>
+<li>Eventos: acciones del usuario (click, submit, etc.) que el script puede detectar.  </li>
+<li>Variables: almacenamiento de datos temporales.  </li>
+<li>Condicionales: ejecución de código según condiciones.  </li>
+<li>Funciones: agrupación de instrucciones reutilizables.  </li>
+<li>Validación de formularios: comprobación de datos antes del envío.</li>
+</ul>
+<h2 id="5-referencias-aprendizaje-javascript">5. Referencias aprendizaje JavaScript<a class="headerlink" href="#5-referencias-aprendizaje-javascript" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Nombre / Enlace</th>
+<th>Idioma</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Web</td>
+<td><a href="https://www.w3schools.com/js/">Tutorial JavaScript</a></td>
+<td>Inglés</td>
+<td>Teoría y práctica</td>
+</tr>
+<tr>
+<td>Web</td>
+<td><a href="https://www.aprendejavascript.dev">Aprende JavaScript</a></td>
+<td>Español</td>
+<td>Curso gratuito paso a paso desde cero, con ejemplos interactivos.</td>
+</tr>
+<tr>
+<td>Web</td>
+<td><a href="https://www.soyhenry.com/curso-javascript?utm_source=chatgpt.com">Curso de JavaScript - Soy Henry</a></td>
+<td>Español</td>
+<td>Curso gratuito introductorio con fundamentos del lenguaje y ejercicios.</td>
+</tr>
+<tr>
+<td>Web</td>
+<td><a href="https://es.javascript.info">El Tutorial de JavaScript Moderno</a></td>
+<td>Español</td>
+<td>Tutorial muy completo y actualizado, desde lo básico hasta avanzado.</td>
+</tr>
+<tr>
+<td>Web</td>
+<td><a href="https://albertvila.cat/curs-javascript/02.htm?utm_source=chatgpt.com">Curs de JavaScript - Albert Vila</a></td>
+<td>Catalán</td>
+<td>Tutorial en catalán con explicaciones claras y ejemplos básicos.</td>
+</tr>
+<tr>
+<td>Video</td>
+<td><a href="https://www.freecodecamp.org/espanol/news/aprende-javascript-curso-completo-desde-cero">Curso de JavaScript desde Cero - freeCodeCamp Español</a></td>
+<td>Español</td>
+<td>Curso completo gratuito en vídeo, ideal para principiantes.</td>
+</tr>
+<tr>
+<td>Video</td>
+<td><a href="https://www.youtube.com/watch?v=1glVfFxj8a4&amp;utm_source=chatgpt.com">Curso completo de JavaScript desde cero - YouTube</a></td>
+<td>Español</td>
+<td>Curso en YouTube con teoría y práctica paso a paso.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

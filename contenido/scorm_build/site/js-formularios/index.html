@@ -1,0 +1,1393 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación en Markdown para 1º de ASIX (HTML, XML/DTD/XSD, XPath/XSLT, RSS, SVG, JSON)">
+      
+      
+      
+      
+        <link rel="prev" href="../js-intro/">
+      
+      
+        <link rel="next" href="../js-formularios-practica/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Javascript-Formularios - LMSGI ASIX — Lenguajes de Marcas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/base.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduccion-a-javascript-gestion-de-formularios" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="LMSGI ASIX — Lenguajes de Marcas" class="md-header__button md-logo" aria-label="LMSGI ASIX — Lenguajes de Marcas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LMSGI ASIX — Lenguajes de Marcas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Javascript-Formularios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_atributos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags y atributos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../practicas_html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  HTML-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_flex/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css_practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias HTML&CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Formularios
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios-practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios-referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Referencias
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LMSGI ASIX — Lenguajes de Marcas" class="md-nav__button md-logo" aria-label="LMSGI ASIX — Lenguajes de Marcas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LMSGI ASIX — Lenguajes de Marcas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_atributos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags y atributos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practicas_html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_flex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Flex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias HTML&CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Formularios
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Formularios
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexto-y-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Contexto y objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-interactuar-con-el-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Interactuar con el DOM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Interactuar con el DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos DOM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-y-propiedades-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos y propiedades principales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métodos y propiedades principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propiedades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propiedades
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-eventos-en-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Eventos en JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Eventos en JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-eventos-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos de eventos comunes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-usan-los-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo se usan los eventos?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-formularios-y-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Formularios y eventos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Formularios y eventos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-un-formulario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos de un formulario
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Campos de un formulario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-input-typetext" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. input type="text"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-textarea" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. textarea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-input-typenumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. input type="number"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-input-typepassword" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. input type="password"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-input-typeemail" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. input type="email"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-input-typedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. input type="date"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-input-typecheckbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. input type="checkbox"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-input-typeradio" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. input type="radio"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-select-y-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. select y option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-asociados-a-un-formulario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos asociados a un formulario
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-de-los-conceptos-a-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. De los conceptos a la práctica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. De los conceptos a la práctica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-controlar-un-formulario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pasos para controlar un formulario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-completo-formulario-con-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo Completo — Formulario con validación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios-practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios-referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Referencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="introduccion-a-javascript-gestion-de-formularios">Introducción a JavaScript — Gestión de formularios<a class="headerlink" href="#introduccion-a-javascript-gestion-de-formularios" title="Permanent link">&para;</a></h1>
+<p><strong>Objetivo general:</strong> aprender a crear scripts básicos en JavaScript que interactúen con formularios HTML.</p>
+<hr />
+<h2 id="1-contexto-y-objetivos">1. Contexto y objetivos<a class="headerlink" href="#1-contexto-y-objetivos" title="Permanent link">&para;</a></h2>
+<p>JavaScript es el lenguaje que da interactividad a las páginas web.</p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML</td>
+<td>Estructura del contenido</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>Diseño y estilos</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>Lógica e interacción</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-interactuar-con-el-dom">2. Interactuar con el DOM<a class="headerlink" href="#2-interactuar-con-el-dom" title="Permanent link">&para;</a></h2>
+<h3 id="conceptos-dom">Conceptos DOM<a class="headerlink" href="#conceptos-dom" title="Permanent link">&para;</a></h3>
+<p>La estructura de un documento HTML son las etiquetas (marcas).</p>
+<p>Según el Modelo de Objetos del Documento (DOM), cada etiqueta HTML es un objeto. Las etiquetas anidadas son llamadas “hijas” de la etiqueta que las contiene. El texto dentro de una etiqueta también es un objeto.</p>
+<pre><code class="language-html">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+  The truth about elk.
+  &lt;ol&gt;
+    &lt;li&gt;An elk is a smart&lt;/li&gt;
+    &lt;!-- comentario --&gt;
+    &lt;li&gt;...y el astuto animal!&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<div>
+<div class="domtree"><svg width="690" height="500"><g transform="translate(20,30)"><path class="link" d="M7,0L7,30L32,30" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M7,0L7,60L32,60" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M32,60L32,90L57,90" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M32,60L32,120L57,120" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M32,60L32,420L57,420" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,150L82,150" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,180L82,180" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,240L82,240" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,270L82,270" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,300L82,300" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,330L82,330" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M57,120L57,390L82,390" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M82,180L82,210L107,210" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><path class="link" d="M82,330L82,360L107,360" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;"></path><g class="node" transform="translate(0,0)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">HTML</text></g><g class="node" transform="translate(25,30)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">HEAD</text></g><g class="node" transform="translate(25,60)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">BODY</text></g><g class="node" transform="translate(50,90)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣The truth about elk.↵␣␣</text></g><g class="node" transform="translate(50,120)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">OL</text></g><g class="node" transform="translate(75,150)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣␣␣</text></g><g class="node" transform="translate(75,180)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">LI</text></g><g class="node" transform="translate(100,210)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text An elk is a smart</text></g><g class="node" transform="translate(75,240)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣␣␣</text></g><g class="node" transform="translate(75,270)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(207, 206, 149); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#comment comment</text></g><g class="node" transform="translate(75,300)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣␣␣</text></g><g class="node" transform="translate(75,330)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">LI</text></g><g class="node" transform="translate(100,360)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ...and cunning animal!</text></g><g class="node" transform="translate(75,390)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣</text></g><g class="node" transform="translate(50,420)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="280" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, &quot;Lucida Console&quot;, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵↵↵</text></g></g></svg></div>
+</div>
+<p><a href="https://es.javascript.info/dom-nodes">Fuente: Javscript.info</a></p>
+<h3 id="metodos-y-propiedades-principales">Métodos y propiedades principales<a class="headerlink" href="#metodos-y-propiedades-principales" title="Permanent link">&para;</a></h3>
+<h4 id="metodos">Métodos<a class="headerlink" href="#metodos" title="Permanent link">&para;</a></h4>
+<p><strong>getElementById</strong>
+  <code>js
+  document.getElementById("id")</code></p>
+<ul>
+<li>Podemos acceder a los elementos con getElementById</li>
+<li>Devuelve el elemento con el atributo id especificado.</li>
+<li>Es muy rápido y es el método más común cuando ya conoces el ID del elemento.</li>
+</ul>
+<p><strong>querySelector</strong></p>
+<p><code>js
+  document.querySelector(".descripcion");</code></p>
+<ul>
+<li>Podemos acceder a todos los elementos con la misma clase querySelector</li>
+<li>Devuelve el primer elemento que coincide con el selector CSS dado.</li>
+<li>Permite usar cualquier selector válido: #id, .clase, tag, combinados, etc.</li>
+<li>Para obtener varios, existe querySelectorAll</li>
+</ul>
+<h4 id="propiedades">Propiedades<a class="headerlink" href="#propiedades" title="Permanent link">&para;</a></h4>
+<p><strong>value</strong></p>
+<pre><code class="language-js">const nombre = document.getElementById(&quot;nombre&quot;).value;
+</code></pre>
+<p>Se usa principalmente en <strong>inputs, textareas y selects</strong>.<br />
+Devuelve o establece <strong>el valor introducido por el usuario</strong>.</p>
+<p><strong>innerText</strong></p>
+<pre><code class="language-js">titulo.innerText = &quot;Nuevo título dinámico&quot;;
+</code></pre>
+<p>Representa <strong>el texto visible dentro de un elemento HTML</strong>.<br />
+Tiene en cuenta estilos como <code>display: none</code> o <code>visibility: hidden</code>.</p>
+<p><strong>style</strong></p>
+<pre><code class="language-js">parrafo.style.color = &quot;blue&quot;;
+parrafo.style.fontSize = &quot;20px&quot;;
+</code></pre>
+<p>Permite modificar <strong>estilos CSS en línea</strong> del elemento mediante JavaScript.</p>
+<h2 id="3-eventos-en-javascript">3. Eventos en  JavaScript<a class="headerlink" href="#3-eventos-en-javascript" title="Permanent link">&para;</a></h2>
+<p>Un <strong>evento</strong> es cualquier acción o suceso que ocurre en la página web y que el navegador puede detectar.<br />
+Tu código JavaScript puede <strong>escuchar</strong> esos eventos y <strong>responder</strong> ejecutando una función.</p>
+<blockquote>
+<p><strong>Un evento es una señal que indica que “algo ha pasado” en la página, como un clic, una tecla pulsada o la carga del documento.</strong></p>
+</blockquote>
+<hr />
+<h3 id="ejemplos-de-eventos-comunes">Ejemplos de eventos comunes<a class="headerlink" href="#ejemplos-de-eventos-comunes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>click</code> — cuando el usuario hace clic en un elemento</li>
+<li><code>input</code> — cuando el usuario escribe en un campo</li>
+<li><code>submit</code> — cuando se envía un formulario</li>
+<li><code>mouseover</code> — cuando el puntero entra en un elemento</li>
+<li><code>keydown</code> — cuando se pulsa una tecla</li>
+<li><code>load</code> — cuando la página ha terminado de cargarse</li>
+</ul>
+<hr />
+<h3 id="como-se-usan-los-eventos">¿Cómo se usan los eventos?<a class="headerlink" href="#como-se-usan-los-eventos" title="Permanent link">&para;</a></h3>
+<p>Los eventos se gestionan mediante <em>manejadores de eventos</em> (<strong>event listeners</strong>):</p>
+<pre><code class="language-js">document.getElementById(&quot;boton&quot;).addEventListener(&quot;click&quot;, function() {
+  console.log(&quot;¡Has hecho clic!&quot;);
+});
+</code></pre>
+<p>En el ejemplo que vamos a trabajar:</p>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;h2&gt;Lectura del DOM&lt;/h2&gt;
+  &lt;input type=&quot;text&quot; id=&quot;nombre&quot; placeholder=&quot;Escribe tu nombre&quot;&gt;
+  &lt;button id=&quot;boton&quot;&gt;Mostrar&lt;/button&gt;
+  &lt;p id=&quot;resultado&quot;&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    const boton = document.getElementById(&quot;boton&quot;);
+    const nombreInput = document.getElementById(&quot;nombre&quot;);
+    const resultado = document.getElementById(&quot;resultado&quot;);
+
+    boton.addEventListener(&quot;click&quot;, () =&gt; {
+      const nombre = nombreInput.value;
+      resultado.innerText = &quot;Hola &quot; + nombre;
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<h2 id="4-formularios-y-eventos">4. Formularios y eventos<a class="headerlink" href="#4-formularios-y-eventos" title="Permanent link">&para;</a></h2>
+<p>Un formulario (<code>&lt;form&gt;</code>) en HTML es un contenedor que agrupa campos donde el usuario puede introducir datos, como texto, correos, contraseñas, opciones o archivos.<br />
+Es el elemento principal para recoger información y procesarla mediante JavaScript o enviarla a un servidor.</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>Identifica el formulario para manipularlo con JS</td>
+</tr>
+<tr>
+<td><code>action</code></td>
+<td>URL a la que se enviarán los datos (si se envían al servidor)</td>
+</tr>
+<tr>
+<td><code>method</code></td>
+<td>Cómo se envían los datos (<code>GET</code> o <code>POST</code>)</td>
+</tr>
+<tr>
+<td><code>autocomplete</code></td>
+<td>Activar o desactivar sugerencias automáticas</td>
+</tr>
+<tr>
+<td><code>novalidate</code></td>
+<td>Desactiva las validaciones automáticas del navegador</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="campos-de-un-formulario">Campos de un formulario<a class="headerlink" href="#campos-de-un-formulario" title="Permanent link">&para;</a></h3>
+<p>Los <strong>campos de un formulario</strong> son los elementos que permiten al usuario introducir información dentro de un <code>&lt;form&gt;</code>.<br />
+Cada campo tiene un tipo que determina <strong>qué datos recoge</strong>, cómo se muestra y qué validaciones aplica automáticamente el navegador.</p>
+<blockquote>
+<p><strong>Los campos de un formulario son elementos interactivos que permiten escribir, seleccionar o enviar datos en una página web.</strong></p>
+</blockquote>
+<p>Los más comunes se crean con elementos como:</p>
+<ul>
+<li><code>&lt;input type="..."&gt;</code></li>
+<li><code>&lt;textarea&gt;</code></li>
+<li><code>&lt;select&gt;</code></li>
+<li><code>&lt;button&gt;</code></li>
+</ul>
+<h4 id="1-input-typetext">1. <code>input type="text"</code><a class="headerlink" href="#1-input-typetext" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;text&quot; placeholder=&quot;Nombre&quot;&gt;
+</code></pre>
+<h4 id="2-textarea">2. <code>textarea</code><a class="headerlink" href="#2-textarea" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;textarea placeholder=&quot;Escribe tu mensaje&quot;&gt;&lt;/textarea&gt;
+</code></pre>
+<h4 id="3-input-typenumber">3. <code>input type="number"</code><a class="headerlink" href="#3-input-typenumber" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;100&quot;&gt;
+</code></pre>
+<h4 id="4-input-typepassword">4. <code>input type="password"</code><a class="headerlink" href="#4-input-typepassword" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;password&quot; placeholder=&quot;Contraseña&quot;&gt;
+</code></pre>
+<h4 id="5-input-typeemail">5. <code>input type="email"</code><a class="headerlink" href="#5-input-typeemail" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;correo@ejemplo.com&quot;&gt;
+</code></pre>
+<h4 id="6-input-typedate">6. <code>input type="date"</code><a class="headerlink" href="#6-input-typedate" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;date&quot;&gt;
+</code></pre>
+<h4 id="7-input-typecheckbox">7. <code>input type="checkbox"</code><a class="headerlink" href="#7-input-typecheckbox" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;checkbox&quot;&gt; Acepto los términos
+</code></pre>
+<h4 id="8-input-typeradio">8. <code>input type="radio"</code><a class="headerlink" href="#8-input-typeradio" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;rojo&quot;&gt; Rojo
+</code></pre>
+<h4 id="9-select-y-option">9. <code>select</code> y <code>option</code><a class="headerlink" href="#9-select-y-option" title="Permanent link">&para;</a></h4>
+<pre><code class="language-html">&lt;select&gt;
+  &lt;option&gt;España&lt;/option&gt;
+  &lt;option&gt;Francia&lt;/option&gt;
+  &lt;option&gt;Italia&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<hr />
+<h3 id="eventos-asociados-a-un-formulario">Eventos asociados a un formulario<a class="headerlink" href="#eventos-asociados-a-un-formulario" title="Permanent link">&para;</a></h3>
+<p>Cuando un usuario interactúa con una página web —escribe en un formulario, hace clic en un botón o selecciona una opción— ocurren eventos. Gracias a los eventos, podemos validar formularios, mostrar mensajes, actualizar información o evitar errores.</p>
+<table>
+<thead>
+<tr>
+<th>Evento</th>
+<th>Dónde se usa</th>
+<th>Cuándo ocurre</th>
+<th>Ejemplo práctico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>submit</code></td>
+<td><code>&lt;form&gt;</code></td>
+<td>Al enviar el formulario</td>
+<td>Validar antes de enviar</td>
+</tr>
+<tr>
+<td><code>reset</code></td>
+<td><code>&lt;form&gt;</code></td>
+<td>Al reiniciar</td>
+<td>Limpiar mensajes</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td><code>input</code>, <code>textarea</code></td>
+<td>Mientras escribe</td>
+<td>Contador de caracteres</td>
+</tr>
+<tr>
+<td><code>change</code></td>
+<td><code>input</code>, <code>select</code>, <code>checkbox</code>, <code>radio</code></td>
+<td>Cambio + perder foco</td>
+<td>Cambiar opción</td>
+</tr>
+<tr>
+<td><code>focus</code></td>
+<td>campos</td>
+<td>Al recibir foco</td>
+<td>Resaltar campo</td>
+</tr>
+<tr>
+<td><code>blur</code></td>
+<td>campos</td>
+<td>Al perder foco</td>
+<td>Validar campo</td>
+</tr>
+<tr>
+<td><code>keydown</code> / <code>keyup</code></td>
+<td>texto</td>
+<td>Pulsar teclas</td>
+<td>Validación en tiempo real</td>
+</tr>
+<tr>
+<td><code>click</code></td>
+<td>botones, checkbox, radio</td>
+<td>Clic</td>
+<td>Activar opciones</td>
+</tr>
+<tr>
+<td><code>invalid</code></td>
+<td>campos HTML5</td>
+<td>Falla validación</td>
+<td>Mensaje automático</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-de-los-conceptos-a-la-practica">5. De los conceptos a la práctica<a class="headerlink" href="#5-de-los-conceptos-a-la-practica" title="Permanent link">&para;</a></h2>
+<h3 id="pasos-para-controlar-un-formulario">Pasos para controlar un formulario<a class="headerlink" href="#pasos-para-controlar-un-formulario" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Seleccionar el formulario.  </li>
+<li>Escuchar el evento <code>submit</code>.  </li>
+<li>Usar <code>event.preventDefault()</code>.  </li>
+<li>Leer valores con <code>.value</code>.  </li>
+<li>Validar los datos.  </li>
+<li>Mostrar mensajes.  </li>
+<li>Resetear si es necesario.</li>
+</ol>
+<p>Ejemplo mínimo:</p>
+<pre><code class="language-js">form.addEventListener(&quot;submit&quot;, (event) =&gt; {
+  event.preventDefault();
+  console.log(&quot;Intento de envío detectado&quot;);
+});
+</code></pre>
+<hr />
+<h3 id="ejemplo-completo-formulario-con-validacion">Ejemplo Completo — Formulario con validación<a class="headerlink" href="#ejemplo-completo-formulario-con-validacion" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;h2&gt;Formulario de contacto&lt;/h2&gt;
+  &lt;form id=&quot;formulario&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;nombre&quot; placeholder=&quot;Nombre&quot;&gt;&lt;br&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Correo&quot;&gt;&lt;br&gt;
+    &lt;button type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;p id=&quot;mensaje&quot;&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    const form = document.getElementById(&quot;formulario&quot;);
+    const mensaje = document.getElementById(&quot;mensaje&quot;);
+
+    form.addEventListener(&quot;submit&quot;, (event) =&gt; {
+      event.preventDefault();
+
+      const nombre = document.getElementById(&quot;nombre&quot;).value.trim();
+      const email = document.getElementById(&quot;email&quot;).value.trim();
+
+      if (nombre === &quot;&quot; || email === &quot;&quot;) {
+        mensaje.innerText = &quot;Rellena todos los campos.&quot;;
+        mensaje.style.color = &quot;red&quot;;
+      } else {
+        mensaje.innerText = &quot;Formulario enviado correctamente.&quot;;
+        mensaje.style.color = &quot;green&quot;;
+        form.reset();
+      }
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

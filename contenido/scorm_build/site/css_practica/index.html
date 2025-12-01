@@ -1,0 +1,1632 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación en Markdown para 1º de ASIX (HTML, XML/DTD/XSD, XPath/XSLT, RSS, SVG, JSON)">
+      
+      
+      
+      
+        <link rel="prev" href="../css/">
+      
+      
+        <link rel="next" href="../html_referencias/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>CSS-Práctica - LMSGI ASIX — Lenguajes de Marcas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/base.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#css-practica-activitat-4" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="LMSGI ASIX — Lenguajes de Marcas" class="md-header__button md-logo" aria-label="LMSGI ASIX — Lenguajes de Marcas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LMSGI ASIX — Lenguajes de Marcas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CSS-Práctica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_atributos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags y atributos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../practicas_html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  HTML-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_flex/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Flex
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../css/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CSS-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../html_referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referencias HTML&CSS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Formularios
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios-practica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Práctica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../js-formularios-referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Javascript-Referencias
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LMSGI ASIX — Lenguajes de Marcas" class="md-nav__button md-logo" aria-label="LMSGI ASIX — Lenguajes de Marcas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LMSGI ASIX — Lenguajes de Marcas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_atributos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags y atributos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practicas_html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_flex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Flex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Práctica
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#continuacio-del-projecte-el-diari-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuació del projecte: El diari digital
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacio-avancada-de-fulles-destil-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicació avançada de fulles d’estil (CSS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicació avançada de fulles d’estil (CSS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptes-clau" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptes clau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-practic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple pràctic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacio-dhtml-i-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validació d’HTML i CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validació d’HTML i CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectius-de-la-validacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objectius de la validació
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eines-de-validacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eines de validació
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llenguatges-de-marques-per-a-la-sindicacio-de-continguts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Llenguatges de marques per a la sindicació de continguts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Llenguatges de marques per a la sindicació de continguts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caracteristiques-principals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Característiques principals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-dun-feed-rss-per-al-diari-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple d’un feed RSS per al Diari Digital
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintesi-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Síntesi final
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-final-css-grid-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pràctica final CSS Grid Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pràctica final CSS Grid Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-que-es-un-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Què és un grid?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-conceptes-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Conceptes bàsics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mesures-utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mesures útils
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-distribucions-habituals" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Distribucions habituals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-collocacio-manual-delements" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Col·locació manual d’elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-grid-vs-flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Grid vs Flexbox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-exercici-basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Exercici bàsic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-objectius-del-bloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Objectius del bloc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disseny-responsive-amb-media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disseny responsive amb Media Queries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Disseny responsive amb Media Queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objectius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objectius
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punts-de-tall-recomanats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Punts de tall recomanats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guia-rapida-mobile-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guia ràpida (mobile-first)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-de-codi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemple de codi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-html-orientativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura HTML orientativa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activitat-4-responsive-complet-del-diari-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activitat 4: Responsive complet del Diari Digital
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcional-reptes-extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Opcional) Reptes extra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-davaluacio-10-punts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rúbrica d’avaluació (10 punts)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referencias HTML&CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Formularios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios-practica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Práctica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js-formularios-referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Javascript-Referencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="css-practica-activitat-4">CSS – Pràctica (Activitat 4)<a class="headerlink" href="#css-practica-activitat-4" title="Permanent link">&para;</a></h1>
+<h2 id="continuacio-del-projecte-el-diari-digital">Continuació del projecte: El diari digital<a class="headerlink" href="#continuacio-del-projecte-el-diari-digital" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Aquesta quarta activitat continua el projecte <strong>“El Diari Digital”</strong>, mantenint el fil conductor sobre com un mitjà digital pot estructurar, presentar i distribuir informació a la web.<br />
+En aquesta etapa ens centrarem en la <strong>consolidació de CSS</strong>, la <strong>validació dels documents HTML i CSS</strong>, i la <strong>creació d’un sistema de sindicació (RSS)</strong> que permet compartir notícies automàticament.</p>
+</blockquote>
+<hr />
+<h2 id="aplicacio-avancada-de-fulles-destil-css">Aplicació avançada de fulles d’estil (CSS)<a class="headerlink" href="#aplicacio-avancada-de-fulles-destil-css" title="Permanent link">&para;</a></h2>
+<p>Després d’aprendre els fonaments del CSS, ara aplicarem conceptes més avançats per donar al nostre diari un <strong>disseny professional, net i adaptable</strong>.</p>
+<h3 id="conceptes-clau">Conceptes clau<a class="headerlink" href="#conceptes-clau" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Jerarquia visual:</strong> utilitza colors, tipografies i espais per guiar la lectura.  </li>
+<li><strong>Reutilització d’estils:</strong> mitjançant classes i fulls externs.  </li>
+<li><strong>Disseny modular:</strong> separar estils per seccions (capçalera, cos, peu, etc.).  </li>
+<li><strong>Coherència cromàtica i tipogràfica:</strong> manté la identitat visual del diari.  </li>
+<li><strong>Resposivitat:</strong> adaptar el contingut a dispositius mòbils.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Exemples de jerarquía</p>
+<ul>
+<li><a href="https://design-toolkit.recursos.uoc.edu/jerarquia/">UOC</a> Ampliació de la jerarquia i altres temes relacionats</li>
+</ul>
+</div>
+<h3 id="exemple-practic">Exemple pràctic<a class="headerlink" href="#exemple-practic" title="Permanent link">&para;</a></h3>
+<pre><code class="language-css">/* styles.css */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #3c6382;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+</code></pre>
+<p><strong>Activitat 1:</strong></p>
+<ol>
+<li>Crea una estructura HTML amb <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> i <code>&lt;footer&gt;</code>.  </li>
+<li>Aplica estils CSS per diferenciar visualment cada secció.  </li>
+<li>Afegeix una llista de notícies amb classes <code>.principal</code> i <code>.secundaria</code> amb estils diferenciats.</li>
+</ol>
+<hr />
+<h2 id="validacio-dhtml-i-css">Validació d’HTML i CSS<a class="headerlink" href="#validacio-dhtml-i-css" title="Permanent link">&para;</a></h2>
+<p>La validació és un procés essencial per garantir que el codi del diari <strong>segueixi els estàndards web</strong> i sigui <strong>accessible i interoperable</strong>.</p>
+<h3 id="objectius-de-la-validacio">Objectius de la validació<a class="headerlink" href="#objectius-de-la-validacio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Detectar errors</strong> de sintaxi o estructura.  </li>
+<li><strong>Millorar la compatibilitat</strong> entre navegadors.  </li>
+<li><strong>Assegurar l’accessibilitat</strong> per a tots els usuaris.  </li>
+<li><strong>Evitar problemes de SEO</strong> relacionats amb HTML invàlid.</li>
+</ul>
+<h3 id="eines-de-validacio">Eines de validació<a class="headerlink" href="#eines-de-validacio" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Eina</th>
+<th>Tipus</th>
+<th>Ús principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://validator.w3.org/">W3C Markup Validator</a></td>
+<td>HTML</td>
+<td>Comprovar estructura i tancament d’etiquetes</td>
+</tr>
+<tr>
+<td><a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validator</a></td>
+<td>CSS</td>
+<td>Comprovar propietats i sintaxi</td>
+</tr>
+<tr>
+<td><a href="https://wave.webaim.org/">Wave Accessibility Tool</a></td>
+<td>Accessibilitat</td>
+<td>Analitzar compatibilitat amb lectors de pantalla</td>
+</tr>
+<tr>
+<td><strong>Inspectors del navegador</strong></td>
+<td>HTML/CSS</td>
+<td>Revisar errors visuals i regles aplicades</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Activitat 2:</strong></p>
+<ol>
+<li>Valida el teu <code>index.html</code> amb el <a href="https://validator.w3.org/">W3C Markup Validator</a>.  </li>
+<li>Valida el teu <code>styles.css</code> amb el <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>.  </li>
+<li>Corregeix els errors detectats i documenta les modificacions.  </li>
+<li>Revisa la compatibilitat visual en Chrome, Firefox i Edge.</li>
+</ol>
+<hr />
+<h2 id="llenguatges-de-marques-per-a-la-sindicacio-de-continguts">Llenguatges de marques per a la sindicació de continguts<a class="headerlink" href="#llenguatges-de-marques-per-a-la-sindicacio-de-continguts" title="Permanent link">&para;</a></h2>
+<p>Els <strong>llenguatges de marques per a sindicació</strong> permeten que altres llocs web o aplicacions <strong>rebin automàticament les actualitzacions</strong> del nostre diari. El més utilitzat és <strong>RSS (Really Simple Syndication)</strong>.</p>
+<h3 id="caracteristiques-principals">Característiques principals<a class="headerlink" href="#caracteristiques-principals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Basat en <strong>XML</strong>.  </li>
+<li>Conté <strong>elements estructurats</strong> com <code>&lt;channel&gt;</code> i <code>&lt;item&gt;</code>.  </li>
+<li>Facilita la <strong>distribució automàtica de notícies</strong>.  </li>
+<li>Pot integrar-se en agregadors, aplicacions o altres webs.</li>
+</ul>
+<h3 id="exemple-dun-feed-rss-per-al-diari-digital">Exemple d’un feed RSS per al Diari Digital<a class="headerlink" href="#exemple-dun-feed-rss-per-al-diari-digital" title="Permanent link">&para;</a></h3>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;rss version=&quot;2.0&quot;&gt;
+  &lt;channel&gt;
+    &lt;title&gt;El Diari Digital&lt;/title&gt;
+    &lt;link&gt;https://www.eldiari.cat&lt;/link&gt;
+    &lt;description&gt;Últimes notícies i articles d'opinió&lt;/description&gt;
+    &lt;language&gt;ca&lt;/language&gt;
+
+    &lt;item&gt;
+      &lt;title&gt;Nova secció d’esports&lt;/title&gt;
+      &lt;link&gt;https://www.eldiari.cat/esports/nova-seccio&lt;/link&gt;
+      &lt;description&gt;El diari estrena avui una secció dedicada a l’esport català.&lt;/description&gt;
+      &lt;pubDate&gt;Tue, 15 Oct 2025 10:00:00 GMT&lt;/pubDate&gt;
+    &lt;/item&gt;
+
+  &lt;/channel&gt;
+&lt;/rss&gt;
+</code></pre>
+<p><strong>Activitat 3:</strong>  </p>
+<ol>
+<li>Crea un fitxer <code>feed.xml</code> amb un mínim de <strong>tres notícies</strong> del teu diari.  </li>
+<li>Inclou títol, descripció, enllaç i data de publicació per a cada notícia.  </li>
+<li>Valida el teu fitxer XML en un validador en línia.  </li>
+<li>Afegeix un enllaç al <code>feed.xml</code> des del peu de pàgina del teu <code>index.html</code>.</li>
+</ol>
+<hr />
+<h2 id="sintesi-final">Síntesi final<a class="headerlink" href="#sintesi-final" title="Permanent link">&para;</a></h2>
+<p>Aquesta activitat t’ha permès:</p>
+<ul>
+<li>Consolidar l’ús de <strong>CSS avançat</strong> per millorar la presentació del diari.  </li>
+<li>Validar la qualitat del teu codi HTML i CSS.  </li>
+<li>Crear un sistema de <strong>sindicació RSS</strong> per compartir continguts automàticament.  </li>
+</ul>
+<p>Tot això reforça la idea que un <strong>diari digital complet</strong> necessita no només contingut i disseny, sinó també <strong>estructura, compatibilitat i distribució eficient</strong>.</p>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Idea clau final</p>
+<p>Un diari digital professional combina un codi validat, un disseny coherent i un sistema de difusió intel·ligent. L’ús correcte de CSS i RSS és essencial per a la seva visibilitat i manteniment en l’ecosistema web.</p>
+</div>
+<h2 id="practica-final-css-grid-layout">Pràctica final  <strong>CSS Grid Layout</strong><a class="headerlink" href="#practica-final-css-grid-layout" title="Permanent link">&para;</a></h2>
+<p>Abans de fer el disseny <em>responsive</em> del Diari Digital, és important entendre una de les eines més potents del CSS modern: <strong>Grid Layout</strong>.
+El sistema <strong>Grid</strong> permet organitzar el contingut en files i columnes amb una flexibilitat molt més gran que <code>float</code>, <code>inline-block</code> o <code>flexbox</code> quan es tracta de dissenys de pàgina.</p>
+<hr />
+<h3 id="1-que-es-un-grid">1. Què és un grid?<a class="headerlink" href="#1-que-es-un-grid" title="Permanent link">&para;</a></h3>
+<p>Un <strong>grid</strong> (graella) és un <em>contenidor</em> que divideix l’espai disponible en una sèrie de <strong>files (rows)</strong> i <strong>columnes (columns)</strong>.
+Els elements dins del contenidor es col·loquen automàticament en aquestes cel·les o bé manualment amb coordenades (<code>grid-row</code>, <code>grid-column</code>).</p>
+<pre><code class="language-css">.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+</code></pre>
+<p>En aquest exemple:</p>
+<ul>
+<li><code>display: grid</code> activa el mode graella.</li>
+<li><code>grid-template-columns</code> defineix <strong>tres columnes</strong>: la primera fixa (200px) i dues flexibles (<code>1fr</code> cadascuna).</li>
+<li><code>gap</code> estableix l’espai entre files i columnes.</li>
+</ul>
+<hr />
+<h3 id="2-conceptes-basics">2. Conceptes bàsics<a class="headerlink" href="#2-conceptes-basics" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Termini</th>
+<th>Significat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grid container</strong></td>
+<td>L’element pare que conté el grid (<code>display: grid;</code>)</td>
+</tr>
+<tr>
+<td><strong>Grid items</strong></td>
+<td>Els elements fills directes del container</td>
+</tr>
+<tr>
+<td><strong>Grid lines</strong></td>
+<td>Línies numerades que delimiten les files i columnes</td>
+</tr>
+<tr>
+<td><strong>Track</strong></td>
+<td>L’espai entre dues línies (una fila o una columna)</td>
+</tr>
+<tr>
+<td><strong>Cell</strong></td>
+<td>Una cel·la individual dins la graella</td>
+</tr>
+<tr>
+<td><strong>Area</strong></td>
+<td>Una zona que pot ocupar diverses cel·les contigües</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="3-mesures-utils">3. Mesures útils<a class="headerlink" href="#3-mesures-utils" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>fr</code></strong> (<em>fractional unit</em>): reparteix espai disponible de forma proporcional.
+  Ex.: <code>grid-template-columns: 2fr 1fr;</code> → la primera columna ocupa el doble que la segona.</li>
+<li><strong><code>auto</code></strong>: mida segons el contingut.</li>
+<li><strong><code>minmax(min, max)</code></strong>: limita el creixement d’una cel·la.
+  Ex.: <code>minmax(200px, 1fr)</code> → mai menys de 200px, però pot créixer fins a 1fr.</li>
+</ul>
+<hr />
+<h3 id="4-distribucions-habituals">4. Distribucions habituals<a class="headerlink" href="#4-distribucions-habituals" title="Permanent link">&para;</a></h3>
+<p><strong>a) Dues columnes (principal + lateral):</strong></p>
+<pre><code class="language-css">.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+</code></pre>
+<p><strong>b) Tres columnes iguals:</strong></p>
+<pre><code class="language-css">.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+</code></pre>
+<p><strong>c) Distribució responsive automàtica:</strong></p>
+<pre><code class="language-css">.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+</code></pre>
+<p>Aquesta forma és molt útil per fer que els elements s’ajustin automàticament a la mida de la pantalla sense definir punts de tall concrets.</p>
+<hr />
+<h3 id="5-collocacio-manual-delements">5. Col·locació manual d’elements<a class="headerlink" href="#5-collocacio-manual-delements" title="Permanent link">&para;</a></h3>
+<p>Cada element fill pot ocupar diverses files o columnes:</p>
+<pre><code class="language-css">.item1 {
+  grid-column: 1 / 3;   /* ocupa de la línia 1 a la 3 → 2 columnes */
+  grid-row: 1 / 2;
+}
+</code></pre>
+<hr />
+<h3 id="6-grid-vs-flexbox">6. Grid vs Flexbox<a class="headerlink" href="#6-grid-vs-flexbox" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Grid</strong></th>
+<th><strong>Flexbox</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pensat per <strong>disposició bidimensional</strong> (files + columnes)</td>
+<td>Pensat per <strong>una sola direcció</strong> (fila <strong>o</strong> columna)</td>
+</tr>
+<tr>
+<td>Ideal per al <strong>layout global</strong> de la pàgina</td>
+<td>Ideal per al <strong>contingut intern</strong> d’un bloc o secció</td>
+</tr>
+<tr>
+<td>Permet alineació en dues dimensions</td>
+<td>Només alinea en una direcció principal</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>En molts dissenys s’utilitzen <strong>tots dos</strong>: <em>Grid</em> per estructurar la pàgina i <em>Flexbox</em> per ordenar els elements dins de cada secció.</p>
+</blockquote>
+<hr />
+<h3 id="7-exercici-basic">7. Exercici bàsic<a class="headerlink" href="#7-exercici-basic" title="Permanent link">&para;</a></h3>
+<p>Crea una petita maqueta de 6 targetes de notícies en 3 columnes:</p>
+<pre><code class="language-html">&lt;section class=&quot;grid-demo&quot;&gt;
+  &lt;article&gt;Notícia 1&lt;/article&gt;
+  &lt;article&gt;Notícia 2&lt;/article&gt;
+  &lt;article&gt;Notícia 3&lt;/article&gt;
+  &lt;article&gt;Notícia 4&lt;/article&gt;
+  &lt;article&gt;Notícia 5&lt;/article&gt;
+  &lt;article&gt;Notícia 6&lt;/article&gt;
+&lt;/section&gt;
+</code></pre>
+<pre><code class="language-css">.grid-demo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.grid-demo article {
+  background: #f1f2f6;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+</code></pre>
+<p>📱 Prova d’afegir <code>auto-fit</code> o <code>minmax()</code> per veure com es reordenen en pantalles petites.</p>
+<hr />
+<h3 id="8-objectius-del-bloc">8. Objectius del bloc<a class="headerlink" href="#8-objectius-del-bloc" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Comprendre la sintaxi i lògica de <strong>Grid Layout</strong>.</li>
+<li>Saber definir <strong>files i columnes flexibles</strong>.</li>
+<li>Utilitzar <code>fr</code>, <code>repeat()</code>, <code>auto-fit</code> i <code>minmax()</code>.</li>
+<li>Preparar la maqueta del <em>Diari Digital</em> per adaptar-la posteriorment amb <strong>media queries</strong>.</li>
+</ul>
+<hr />
+<h2 id="disseny-responsive-amb-media-queries">Disseny responsive amb <strong>Media Queries</strong><a class="headerlink" href="#disseny-responsive-amb-media-queries" title="Permanent link">&para;</a></h2>
+<p>En aquest bloc aprendràs a adaptar el <em>Diari Digital</em> a diferents amplades de pantalla utilitzant <strong>media queries</strong>. Treballarem amb un enfoc <strong>mobile-first</strong> i definirem punts de tall per a mòbil, tablet i escriptori.</p>
+<h3 id="objectius">Objectius<a class="headerlink" href="#objectius" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Entendre la sintaxi de <code>@media</code> i el concepte de <strong>mobile-first</strong>.</li>
+<li>Dissenyar una <strong>graella</strong> que canviï de columnes segons la mida de pantalla.</li>
+<li>Fer que la <strong>navegació</strong> i els <strong>articles</strong> siguin llegibles i usables en dispositius petits.</li>
+<li>Assegurar que imatges, tipografia i espais s’adaptin fluidament.</li>
+</ul>
+<h3 id="punts-de-tall-recomanats">Punts de tall recomanats<a class="headerlink" href="#punts-de-tall-recomanats" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Mòbil</strong>: ≤ <strong>767px</strong></li>
+<li><strong>Tablet</strong>: <strong>768–1023px</strong></li>
+<li><strong>Escriptori</strong>: ≥ <strong>1024px</strong></li>
+</ul>
+<blockquote>
+<p>Pots ajustar aquests valors si el teu disseny ho demana; l’important és que hi hagi coherència entre trencaments.</p>
+</blockquote>
+<h3 id="guia-rapida-mobile-first">Guia ràpida (mobile-first)<a class="headerlink" href="#guia-rapida-mobile-first" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Base (mòbil per defecte)</strong> – Estils globals sense media queries.</li>
+<li><strong>Tablet</strong> – Afina distribució i tipografies a partir de 768px.</li>
+<li><strong>Escriptori</strong> – Amplia graelles i marges a partir de 1024px.</li>
+</ol>
+<h3 id="exemple-de-codi">Exemple de codi<a class="headerlink" href="#exemple-de-codi" title="Permanent link">&para;</a></h3>
+<pre><code class="language-css">/* 1) Base: mòbil (mobile-first) */
+:root{
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --maxw: 1200px;
+}
+
+/* Tipografia fluida */
+html { font-size: clamp(15px, 2.2vw, 18px); }
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  margin: 0;
+  color: #222;
+  background: #fafafa;
+}
+
+header, footer{
+  padding: var(--space-2);
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+}
+
+/* Navegació: pila vertical al mòbil */
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-1);
+}
+nav a{
+  display: block;
+  padding: .6rem .8rem;
+  background: #3c6382;
+  color: #fff;
+  text-decoration: none;
+  border-radius: .5rem;
+}
+
+/* Contingut principal en una sola columna al mòbil */
+main{
+  width: min(92%, var(--maxw));
+  margin: var(--space-2) auto;
+}
+.grid-noticies{
+  display: grid;
+  grid-template-columns: 1fr;         /* 1 col mòbil */
+  gap: var(--space-2);
+}
+article{
+  background: #fff;
+  padding: var(--space-2);
+  border-radius: .6rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+article img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: .4rem;
+  margin-block: .5rem;
+}
+
+/* 2) Tablet ≥768px */
+@media (min-width: 768px){
+  nav ul{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;           /* menú en fila, botons fluids */
+  }
+  .grid-noticies{
+    grid-template-columns: 1.2fr 1fr; /* 2 columnes: principal + lateral */
+  }
+  .llista-secundaries{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* subgrid dins la columna lateral */
+    gap: var(--space-2);
+  }
+}
+
+/* 3) Escriptori ≥1024px */
+@media (min-width: 1024px){
+  main{ width: min(86%, var(--maxw)); }
+  .grid-noticies{
+    grid-template-columns: 2fr 1fr 1fr; /* 3 columnes: portada + dues secundàries */
+  }
+  nav ul{
+    justify-content: center;
+    gap: var(--space-2);
+  }
+  article{ padding: var(--space-3); }
+}
+</code></pre>
+<h3 id="estructura-html-orientativa">Estructura HTML orientativa<a class="headerlink" href="#estructura-html-orientativa" title="Permanent link">&para;</a></h3>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;h1&gt;El Diari Digital&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portada&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Actualitat&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Esports&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Cultura&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;section class=&quot;grid-noticies&quot;&gt;
+    &lt;article class=&quot;principal&quot;&gt;
+      &lt;h2&gt;Títol principal&lt;/h2&gt;
+      &lt;img src=&quot;img/portada.jpg&quot; alt=&quot;Imatge notícia principal&quot;&gt;
+      &lt;p&gt;Resum de la notícia principal…&lt;/p&gt;
+    &lt;/article&gt;
+
+    &lt;aside class=&quot;llista-secundaries&quot;&gt;
+      &lt;article class=&quot;secundaria&quot;&gt;
+        &lt;h3&gt;Notícia 1&lt;/h3&gt;
+        &lt;p&gt;Extracte…&lt;/p&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;secundaria&quot;&gt;
+        &lt;h3&gt;Notícia 2&lt;/h3&gt;
+        &lt;p&gt;Extracte…&lt;/p&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;secundaria&quot;&gt;
+        &lt;h3&gt;Notícia 3&lt;/h3&gt;
+        &lt;p&gt;Extracte…&lt;/p&gt;
+      &lt;/article&gt;
+      &lt;article class=&quot;secundaria&quot;&gt;
+        &lt;h3&gt;Notícia 4&lt;/h3&gt;
+        &lt;p&gt;Extracte…&lt;/p&gt;
+      &lt;/article&gt;
+    &lt;/aside&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;small&gt;&amp;copy; 2025 El Diari Digital — &lt;a href=&quot;feed.xml&quot;&gt;RSS&lt;/a&gt;&lt;/small&gt;
+&lt;/footer&gt;
+</code></pre>
+<hr />
+<h3 id="activitat-4-responsive-complet-del-diari-digital">Activitat 4: <em>Responsive complet del Diari Digital</em><a class="headerlink" href="#activitat-4-responsive-complet-del-diari-digital" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Mobile-first:</strong> ajusta els estils base perquè el lloc es vegi perfecte a mòbil (una sola columna, navegació apilada, imatges fluides).</li>
+<li><strong>Tablet (≥768px):</strong> reestructura el <em>layout</em> a dues columnes i converteix el menú en fila.</li>
+<li><strong>Escriptori (≥1024px):</strong> crea una graella de tres columnes (portada + 2 secundàries).</li>
+<li><strong>Tipografia fluida:</strong> aplica <code>clamp()</code> per al <code>font-size</code> del <code>&lt;html&gt;</code> i revisa line-height i marges.</li>
+<li><strong>Imatges i media:</strong> assegura <code>max-width: 100%</code> i proves amb diferents proporcions.</li>
+<li><strong>Accessibilitat i focus:</strong> comprova contrastos i estats <code>:focus-visible</code> en enllaços del menú.</li>
+<li><strong>Validació i proves:</strong> valida HTML/CSS i comprova el resultat amb les <em>devtools</em> (mòbils populars).</li>
+<li><strong>Documenta</strong> els punts de tall triats i el perquè (2–4 frases).</li>
+</ol>
+<p><strong>Entrega:</strong></p>
+<ul>
+<li>Codi HTML/CSS actualitzat.</li>
+<li>3 captures (mòbil, tablet, escriptori) del mateix article de portada.</li>
+<li>Fitxer <code>README_responsive.md</code> breu amb decisions i punts de tall.</li>
+</ul>
+<h3 id="opcional-reptes-extra">(Opcional) Reptes extra<a class="headerlink" href="#opcional-reptes-extra" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sticky header</strong> amb <em>scroll shadow</em> només a partir de 768px.</li>
+<li><strong>Cards equilibrades</strong>: limita el nombre de línies del titular amb <code>line-clamp</code> (si ho prefereixes, amb una classe utilitària).</li>
+<li><strong>Dark mode</strong> respectant <code>@media (prefers-color-scheme: dark)</code>.</li>
+</ul>
+<h3 id="rubrica-davaluacio-10-punts">Rúbrica d’avaluació (10 punts)<a class="headerlink" href="#rubrica-davaluacio-10-punts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Estructura responsive</strong> (3p): canvis coherents entre punts de tall.</li>
+<li><strong>Llegibilitat</strong> (2p): tipografia, espaiat, contrast.</li>
+<li><strong>Imatges/multimèdia fluids</strong> (1.5p).</li>
+<li><strong>Navegació usable</strong> (1.5p): focus, ordre, tacte en mòbil.</li>
+<li><strong>Validació i documentació</strong> (2p): W3C ok i README clar.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
